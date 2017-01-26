@@ -1,0 +1,113 @@
+body{
+	background-color: #f1f5f8;
+}
+
+h4{
+	color:#47525d;
+	margin-bottom: 20px;
+}
+
+/** GERAL **/
+
+.destaque{
+	background-color: #e2f2b6;
+	border-bottom: 3px solid #cce389;
+	color:#8aba00;
+	margin: 30px 0;
+}
+
+.detalhes-usuario{
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: 0px 0px 13px 1px rgba(198, 200, 202, 0.23);
+	color:#84919e;
+	margin: 30px 0;
+	padding: 20px 0;
+}
+
+.detalhes-usuario h3{
+	color:#47525d;
+}
+
+.detalhes-usuario p{
+	line-height: 27px;
+}
+
+.detalhes-usuario h4{
+	color:#84919e;
+}
+
+.btn-padrao, .btn-padrao:hover{
+	background-color: #a1d800;
+	color:#fff;
+}
+
+.btn-facebook, .btn-facebook:hover, .facebook, .facebook h4{
+	background-color: #3a5998;
+	color:#fff;
+}
+
+.btn-twitter, .btn-twitter:hover, .twitter, .twitter h4{
+	background-color: #28a2ef;
+	color:#fff;
+}
+
+/** MENU USUÁRIO **/
+.nav-usuario{
+	background-color: #47525d;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+.nav-usuario .navbar-nav > li > a:hover,
+.nav-usuario .navbar-nav > li > a:focus {
+    background-color: #47525d;
+}
+
+/** MENU PLATAFORMA **/
+.nav-plataforma{
+	background-color: #fff;
+	border-radius: 0;
+	box-shadow: 0 10px 18px -9px rgba(198, 200, 202, 0.23);
+}
+
+.nav-plataforma .navbar-collapse{
+	padding-left: 0; 
+}
+
+.nav-plataforma .navbar-nav > li > a:hover,
+.nav-plataforma .navbar-nav > li > a:focus {
+    background-color: #fff;
+    border-bottom: 3px solid #a1d800;
+    color:#a1d800;
+}
+
+.nav-plataforma ul li:first-child a{
+	padding-left: 0;
+}
+
+.nav-plataforma ul li a{
+	color: #9fb0c1;
+}
+
+.nav-plataforma ul li a.active{
+	color:#a1d800;
+	border-bottom: 3px solid #a1d800;
+}
+
+/** TABELAS **/
+.table{
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: 0px 0px 13px 1px rgba(198, 200, 202, 0.23);
+	padding: 20px;
+}
+
+th{
+	color:#47525d;
+}
+
+tr{
+	color:#aab9c8;
+}
+
