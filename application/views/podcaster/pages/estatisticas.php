@@ -1,15 +1,15 @@
 <?php
-$dado['channel'] = $channel;
-$this->load->view('podcaster/fixed-files/header-footer/header',$dado);
 
-$this->load->view('podcaster/fixed-files/menu/menu-plataforma',$dado);
+$this->load->view('podcaster/fixed-files/header-footer/header');
+
+$this->load->view('podcaster/fixed-files/menu/menu-plataforma');
 
 ?>
 <div class="container">
 
 	<div class="row destaque">
 		<div class="col-md-12">
-			<h3>Bem vindo as estatísticas do <?php echo $channel;?></h3>
+			<h3>Bem vindo as estatísticas do NarradorCast</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet dictum velit. Nam lacinia augue a ligula accumsan egestas et id mi. Aenean dictum nibh vitae ligula blandit dignissim. Integer ut faucibus mauris, nec pharetra erat. Nam id scelerisque ante, et pulvinar felis. Proin a metus dolor. Sed quis augue non ipsum vehicula blandit quis at eros.</p>
 		</div>
 	</div>
@@ -64,7 +64,7 @@ $this->load->view('podcaster/fixed-files/menu/menu-plataforma',$dado);
 
 
 <?php
-$this->load->view('podcaster/fixed-files/header-footer/footer',$dado);
+$this->load->view('podcaster/fixed-files/header-footer/footer');
 
 
 ?>

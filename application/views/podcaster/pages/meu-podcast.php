@@ -77,7 +77,7 @@ $this->load->view('podcaster/fixed-files/menu/menu-plataforma',$dado);
 
 
 <?php
-$this->load->view('podcaster/fixed-files/header-footer/footer',$dado);
+$this->load->view('podcaster/fixed-files/header-footer/footer');
 
 
 ?>

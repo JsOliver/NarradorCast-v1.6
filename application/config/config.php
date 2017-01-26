@@ -28,9 +28,11 @@ $where = getcwd();
 
 
 if ($where === 'C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\narradorcast_v1.6') :
+    //joao
     $config['base_url'] = 'http://127.0.0.1:8080/projects/narradorcast_v1.6/';
 
 else:
+    //aline
     $config['base_url'] = '';
 
 endif;
