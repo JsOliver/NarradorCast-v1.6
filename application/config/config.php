@@ -24,26 +24,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-    if($_SERVER['HTTP_HOST'] == 'narradorcast.com.br'):
-
-        //Site Online
-
-    $config['base_url'] = 'http://www.narradorcast.com.br/';
-
-    else:
-            if (getcwd() === 'C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\narradorcast_v1.6') :
-
-                //João
-            $config['base_url'] = 'http://127.0.0.1:8080/projects/narradorcast_v1.6/';
-
-            else:
-                //Aline
-                $config['base_url'] = '';
-
-            endif;
-            endif;
+$where = getcwd();
 
 
+if ($where === 'C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\narradorcast_v1.6') :
+    $config['base_url'] = 'http://127.0.0.1:8080/projects/narradorcast_v1.6/';
+
+else:
+    $config['base_url'] = '';
+
+endif;
 
 /*
 |--------------------------------------------------------------------------
