@@ -9,6 +9,12 @@ h4{
 
 /** GERAL **/
 
+
+.navbar{
+
+	border-radius: 0px;
+
+}
 .destaque{
 	background-color: #e2f2b6;
 	border-bottom: 3px solid #cce389;

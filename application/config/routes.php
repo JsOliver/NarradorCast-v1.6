@@ -2,9 +2,19 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 
-$route['default_controller'] = 'Ouvinte_pages';
+$route['default_controller'] = 'Welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+
+
+
+        //Pagina de inicio
+
+        $route['login'] = 'Welcome/login';
+        $route['cadastro'] = 'Welcome/cadastro';
+        $route['sobre'] = 'Welcome/sobre';
+
 
     //Ouvinte Rotas das Paginas - Inicio
 

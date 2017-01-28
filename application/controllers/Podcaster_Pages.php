@@ -13,6 +13,7 @@ class Podcaster_Pages extends CI_Controller
 
         $dados['channel'] = $this->uri->segment(3);
         $dados['page'] = 'estatisticas';
+        $dados['version'] = '1.6';
 
         $this->load->view('podcaster/pages/estatisticas',$dados);
     }
@@ -22,6 +23,7 @@ class Podcaster_Pages extends CI_Controller
 
         $dados['channel'] = $this->uri->segment(3);
         $dados['page'] = 'estatisticas';
+        $dados['version'] = '1.6';
         $this->load->view('podcaster/pages/estatisticas',$dados);
     }
 
@@ -30,7 +32,7 @@ class Podcaster_Pages extends CI_Controller
 
         $dados['channel'] = $this->uri->segment(3);
         $dados['page'] = 'meu-podcast';
-
+        $dados['version'] = '1.6';
         $this->load->view('podcaster/pages/meu-podcast',$dados);
     }
 
@@ -39,6 +41,7 @@ class Podcaster_Pages extends CI_Controller
 
         $dados['channel'] = $this->uri->segment(3);
         $dados['page'] = 'redes-sociais';
+        $dados['version'] = '1.6';
         $this->load->view('podcaster/pages/redes/redes-sociais',$dados);
     }
 

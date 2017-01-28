@@ -1,14 +1,14 @@
 <?php
-echo $this->head_ud->head(2);
+echo $this->head_ud->head(2,$version);
 ?>
   <body>
     <header>
-      <nav class="navbar nav-usuario">
+      <nav class="navbar nav-usuario" style="border-radius: 0px;">
         <div class="container">
 
           <div class="navbar-header">
             <a class="navbar-brand" href="<?php echo base_url('channel'.$channel);?>">
-              <img alt="Narrador Cast" src="<?php echo base_url('assets/templates/podcaster/images/logo.png');?>">
+              <img alt="Narrador Cast" src="<?php echo base_url('assets/templates/podcaster/'.$version.'/images/logo.png');?>">
             </a>
           </div>
 
