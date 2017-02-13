@@ -14,14 +14,13 @@ class Head_ud
             $return = '
             
              <!-- CSS -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">        
         <link rel="stylesheet" href="'.base_url('assets/templates/general/'.$version.'/font-awesome-4.7.0/css/font-awesome.css').'">
         <link rel="stylesheet" href="'.base_url('assets/templates/landing/'.$version.'/bootstrap/css/bootstrap.min.css').'">
-        <link rel="stylesheet" href="'.base_url('assets/templates/landing/'.$version.'/typicons/typicons.min.css').'">
         <link rel="stylesheet" href="'.base_url('assets/templates/landing/'.$version.'/css/animate.css').'">
 		<link rel="stylesheet" href="'.base_url('assets/templates/landing/'.$version.'/css/form-elements.css').'">
         <link rel="stylesheet" href="'.base_url('assets/templates/landing/'.$version.'/css/style.css').'">
         <link rel="stylesheet" href="'.base_url('assets/templates/landing/'.$version.'/css/media-queries.css').'">
+        <link rel="stylesheet" href="'.base_url('assets/templates/landing/'.$version.'/css/contact-forms.css').'">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -75,11 +74,12 @@ class Head_ud
         <!-- Javascript -->
         <script src="'.base_url('assets/templates/landing/'.$version.'/js/jquery-1.11.1.min.js').'"></script>
         <script src="'.base_url('assets/templates/landing/'.$version.'/bootstrap/js/bootstrap.min.js').'"></script>
+        <script src="'.base_url('assets/templates/landing/'.$version.'/js/jquery.validate.js').'"></script>
         <script src="'.base_url('assets/templates/landing/'.$version.'/js/jquery.backstretch.min.js').'"></script>
         <script src="'.base_url('assets/templates/landing/'.$version.'/js/wow.min.js').'"></script>
         <script src="'.base_url('assets/templates/landing/'.$version.'/js/retina-1.1.0.min.js').'"></script>
         <script src="'.base_url('assets/templates/landing/'.$version.'/js/scripts.js').'"></script>
-        
+        <script src="'.base_url('assets/templates/landing/'.$version.'/js/contato.js').'"></script>
         <!--[if lt IE 10]>
             <script src="'.base_url('assets/templates/landing/'.$version.'/js/placeholder.js').'"></script>
         <![endif]-->
@@ -116,22 +116,67 @@ class Head_ud
 
     }
 
-    public function meta($guide)
+    public function meta($guide,$array)
     {
+        if($guide == 0):
+            $charset = '<meta charset="UTF-8" />'.$this->quebra;
+
+            if(array_key_exists('title',$array) and !empty($array['title'])):
+
+                $title = '<meta name="title" content="'.$array['title'].'" />'.$this->quebra;
+                $title2 = '<meta property="og:title" content="'.$array['title'].'">'.$this->quebra;
+            else:
+
+                $title = '';
+                $title2 = '';
+
+
+            endif;
+
+            if(array_key_exists('description',$array) and !empty($array['description'])):
+
+
+                $description = '<meta name="description" content="'.$array['description'].'" />'.$this->quebra;
+                $description2 = '<meta property="og:description" content="'.$array['description'].'">'.$this->quebra;
+
+            else:
+                $description = '';
+                $description2 = '';
+
+            endif;
+
+            if(array_key_exists('keywords',$array) and !empty($array['keywords'])):
+
+                $keywords = '<meta name="keywords" content="'.$array['keywords'].'" />'.$this->quebra;
+
+            else:
+                $keywords = '';
+
+
+            endif;
+
+            $return = $title.$title2.$description.$description2.$keywords;
+
+        endif;
+
+
+
+        return $return;
 
 
     }
 
-    public function head($guide,$version)
+    public function head($guide,$version,$array,$title)
     {
 
         if ($guide == 0):
 
 
             $return = '<!DOCTYPE html>' . $this->quebra . '
-                <html lang="pt-br">' . $this->quebra . '<head>' . $this->quebra . $this->meta(0) . $this->quebra . '
-               <title> Narrador Cast</title>' . $this->quebra.
-                $this->css(0,$version) . $this->quebra . $this->js(0,$version) . $this->quebra .
+                <html lang="pt-br">' . $this->quebra . '<head>' . $this->quebra . $this->meta($guide,$array) . $this->quebra . '
+               <title>'.$title.'</title>' . $this->quebra.
+                $this->css(0,$version) . $this->quebra .
+
                 '
               </head> 
                ';
@@ -149,9 +194,9 @@ class Head_ud
         if ($guide == 2):
 
             $return = '<!DOCTYPE html>' . $this->quebra . '
-                <html lang="pt-br">' . $this->quebra . '<head>' . $this->quebra . $this->meta(2) . $this->quebra . '
+                <html lang="pt-br">' . $this->quebra . '<head>' . $this->quebra . $this->meta($guide,$array) . $this->quebra . '
                <title> Narrador Cast</title>' . $this->quebra.
-                $this->css(2,$version) . $this->quebra . $this->js(2,$version) . $this->quebra .
+                $this->css(2,$version) . $this->quebra .
                 '
               </head> 
                ';

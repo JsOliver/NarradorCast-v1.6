@@ -14,9 +14,9 @@ if ($where === 'C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\p
     $db['default'] = array(
         'dsn'	=> '',
         'hostname' => 'localhost',
-        'username' => '',
+        'username' => 'root',
         'password' => '',
-        'database' => '',
+        'database' => 'narrador_app',
         'dbdriver' => 'mysqli',
         'dbprefix' => '',
         'pconnect' => FALSE,

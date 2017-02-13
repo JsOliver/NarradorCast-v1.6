@@ -1,9 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class SessionVerify {
-    public function __construct()
-    {
-    }
+class SessionsVerify {
+
     public function logVer(){
 
 

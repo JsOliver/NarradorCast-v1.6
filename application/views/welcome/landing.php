@@ -1,17 +1,24 @@
 <?php
-
-echo $this->head_ud->head(0,$version);
+echo $this->head_ud->head(0,$version,$metas,$title);
 ?>
 <body>
 <style>
-    .top-content-narrador{
-        background-image: url('<?php echo base_url('assets/templates/landing/'.$version.'/img/backgrounds/1.jpg');?>');
 
+
+    .top-content-narrador{
+        background-image: url('<?php echo base_url('assets/templates/landing/'.$version.'/img/backgrounds/2.png');?>');
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
     }
 
     .call-action-narrador{
-        background-image: url('<?php echo base_url('assets/templates/landing/'.$version.'/img/backgrounds/1.jpg');?>');
-
+        background-image: url('<?php echo base_url('assets/templates/landing/'.$version.'/img/backgrounds/2.png');?>');
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
     }
     .top-content-narrador a{
        color:white;
@@ -35,7 +42,58 @@ echo $this->head_ud->head(0,$version);
 
 <!-- Top content -->
 <div class="top-content-narrador" style="">
+    <?php
 
+    $this->db->from('landing_page');
+    $this->db->order_by('id','desc');
+    $this->db->limit(1,0);
+    $get = $this->db->get();
+    $count = $get->num_rows();
+    $result = $get->result_array();
+
+    if($count > 0):
+
+        $titulo = $result[0]['titulo'];
+        $descricao = $result[0]['texto1'];
+        $btn1 = $result[0]['btn1'];
+        $btn2 = $result[0]['btn2'];
+        $btn1_link = $result[0]['btn1_link'];
+        $btn2_link = $result[0]['btn2_link'];
+        $titulo_cad =  $result[0]['titulo_cad'];
+        $texto_cad =  $result[0]['texto_cad'];
+        $faq =  $result[0]['faq'];
+        $plp =  $result[0]['plp'];
+        $sobre =  $result[0]['sobre'];
+        $nact =  $result[0]['activen'];
+        $n1 = $result[0]['n1'];
+        $n2 = $result[0]['n2'];
+        $n3 = $result[0]['n3'];
+        $n1ico = $result[0]['icon1'];
+        $n2ico = $result[0]['icon2'];
+        $n3ico = $result[0]['icon3'];
+    else:
+
+        $titulo = 'Ouça os melhores podcasts gratuitamente';
+        $descricao = 'Ouça os melhores podcasts no narradorcast, e cadastre seu podcast para alcançar o mais usuarios.';
+        $btn1 = 'Entrar';
+        $btn2 = 'Sobre';
+        $btn1_link = 'login';
+        $btn2_link = '#always-beautiful';
+        $titulo_cad =  'Cadastre-se';
+        $texto_cad =  'Cadastre-se para ter acesso a plataforma mais completa de podcasts.';
+        $faq =  'Cadastre-se para ter acesso a plataforma mais completa de podcasts.';
+        $plp =  'Cadastre-se para ter acesso a plataforma mais completa de podcasts.';
+        $sobre =  'Normalmente ouvimos mais de um podcast, por isso existe o agregador de podcast, assim podemos concentrar vários podcasts diferentes em um mesmo lugar, facilitando os acessos. O NarradorCast é um agregador de podcast gratuito onde você pode criar seu próprio feed com os podcasts preferidos e ainda descobrir novos podcasts que ainda não conhecia. Temos uma área em que os podcasts cadastrados são agrupados por assuntos diversos, assim é possível você selecionar o tema e encontrar o que mais combina com você.';
+
+        $nact =  0;
+        $n1 = '';
+        $n2 = '';
+        $n3 = '';
+        $n1ico = '';
+        $n2ico = '';
+        $n3ico = '';
+    endif;
+    ?>
     <!-- Top menu -->
     <nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
         <div class="container">
@@ -46,71 +104,79 @@ echo $this->head_ud->head(0,$version);
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Marco - Bootstrap Landing Page</a>
+                <a href="index.html"><img class="img-responsive" style="width: 150px;float: left;margin: 0; padding: 0;" src="http://www.narradorcast.com.br/resources/images/icons/system/logo-large.png"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="top-navbar-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a class="scroll-link" href="#features">Features</a></li>
-                    <li><a class="scroll-link" href="#how-it-works">How it works</a></li>
-                    <li><a class="scroll-link" href="#pricing">Price</a></li>
-                    <li><a class="scroll-link" href="#about-us">About</a></li>
-                    <li><a class="scroll-link" href="#testimonials">Testimonials</a></li>
-                    <li><a class="btn btn-link-2" href="#">Button</a></li>
+                    <li><a class="scroll-link" href="#always-beautiful">Sobre nós</a></li>
+                    <?php if($nact == 1):?>
+                    <li><a class="scroll-link" href="#features">Novidades</a></li>
+                    <?php endif;?>
+                    <li><a class="scroll-link" href="#c-form-3">Contato</a></li>
+                    <li><a class="btn btn-link-2" href="<?php echo base_url('login');?>">Entrar</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+
     <div class="inner-bg">
         <div class="container">
             <div class="row">
                 <div class="col-sm-7 text">
-                    <h1 class="wow fadeInLeftBig">Learn to Code in <strong>1 Month</strong></h1>
+                    <h1 class="wow fadeInLeftBig"><?php echo $titulo;?></h1>
                     <div class="description wow fadeInLeftBig">
                         <p>
-                            We have been working very hard to create the new version of our course.
-                            It comes with a lot of new features, easy to follow videos and images. Check it out now!
+                            <?php echo $descricao;?>
                         </p>
                     </div>
                     <div class="top-big-link wow fadeInUp">
-                        <a class="btn btn-link-1 scroll-link" href="#pricing">Our prices</a>
-                        <a class="btn btn-link-2 scroll-link" href="#features">Learn more</a>
+                        <a class="btn btn-link-1" href="<?php echo $btn1_link;?>" target="_blank"><?php echo $btn1;?></a>
+                        <a class="btn btn-link-2 scroll-link" href="<?php echo $btn2_link;?>"><?php echo $btn2;?></a>
                     </div>
                 </div>
                 <div class="col-sm-5 form-box wow fadeInUp">
                     <div class="form-top">
                         <div class="form-top-left">
-                            <h3>Sign up now</h3>
-                            <p>Fill in the form below to get instant access:</p>
+                            <h3><?php echo $titulo_cad;?></h3>
+                            <p><?php echo $texto_cad;?></p>
                         </div>
                         <div class="form-top-right">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div class="form-bottom">
-                        <form role="form" action="" method="post">
+
+                        <form method="post" action="" id="cadastro_form">
                             <div class="form-group">
-                                <label class="sr-only" for="form-first-name">First name</label>
-                                <input type="text" name="form-first-name" placeholder="First name..." class="form-first-name form-control" id="form-first-name">
+                                <label  class="sr-only" for="form-first-name"><b class="text-danger">*</b> Nome</label>
+                                <input type="text" name="nome" placeholder="* Nome..." class="form-first-name form-control" id="form-first-name">
                             </div>
                             <div class="form-group">
-                                <label class="sr-only" for="form-last-name">Last name</label>
-                                <input type="text" name="form-last-name" placeholder="Last name..." class="form-last-name form-control" id="form-last-name">
+                                <label class="sr-only" for="form-last-name"><b class="text-danger">*</b> Sobrenome</label>
+                                <input type="text" name="sobrenome" placeholder="* Sobrenome..." class="form-last-name form-control" id="form-last-name">
                             </div>
                             <div class="form-group">
-                                <label class="sr-only" for="form-email">Email</label>
-                                <input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
+                                <label class="sr-only" for="form-email"><b class="text-danger">*</b> E-mail</label>
+                                <input type="text" name="email" placeholder="* E-mail..." class="form-email form-control" id="form-email">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="sr-only" for="form-pass"><b class="text-danger">*</b> Senha</label>
+                                <input type="password" name="senha" placeholder="* Senha..." class="form-pass form-control" id="form-pass">
                             </div>
                             <div class="form-group">
-                                <label class="sr-only" for="form-about-yourself">About yourself</label>
-                                <textarea name="form-about-yourself" placeholder="About yourself..."
+                                <label class="sr-only" for="form-about-yourself">Sobre mim <small>(Opicional)</small></label>
+                                <textarea name="sobre" placeholder="Sobre mim... "
                                           class="form-about-yourself form-control" id="form-about-yourself"></textarea>
                             </div>
-                            <button type="submit" class="btn">Sign me up!</button>
+                            <button type="submit" class="btn">Cadastrar!</button>
                             <div class="form-links">
-                                <a href="#" class="launch-modal" data-modal-id="modal-privacy">Privacy Policy</a> -
+                                <a href="#" class="launch-modal" data-modal-id="modal-privacy">Politica de Privacidade</a> -
                                 <a href="#" class="launch-modal" data-modal-id="modal-faq">FAQ</a>
+                                <br>
+                                <b id="error"></b>
                             </div>
                         </form>
                     </div>
@@ -121,194 +187,75 @@ echo $this->head_ud->head(0,$version);
 
 </div>
 
-<!-- Features -->
+<?php if($nact == 1):?>
 <div class="features-container section-container">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 features section-description wow fadeIn">
-                <h2>What's included</h2>
+                <h2>Novidades</h2>
                 <div class="divider-1 wow fadeInUp"><span></span></div>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-4 features-box features-box-gray wow fadeInUp">
+
+
+
+            <div class="col-sm-4 features-box features-box-gray wow fadeInUp" >
                 <div class="features-box-icon">
-                    <span aria-hidden="true" class="typcn typcn-eye-outline"></span>
+                    <span aria-hidden="true" class=" <?php echo $n1ico;?>"></span>
                 </div>
-                <h3>Easy To Use</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-            </div>
-            <div class="col-sm-4 features-box wow fadeInDown">
-                <div class="features-box-icon">
-                    <span aria-hidden="true" class="typcn typcn-thumbs-ok"></span>
-                </div>
-                <h3>Responsive Design</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            <?php echo $n1;?>
             </div>
             <div class="col-sm-4 features-box features-box-gray wow fadeInUp">
                 <div class="features-box-icon">
-                    <span aria-hidden="true" class="typcn typcn-cog-outline"></span>
+                    <span aria-hidden="true" class="<?php echo $n2ico;?>"></span>
                 </div>
-                <h3>Bootstrap Engine</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            <?php echo $n2;?>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 features-box wow fadeInUp">
+
+            <div class="col-sm-4 features-box features-box-gray wow fadeInUp">
                 <div class="features-box-icon">
-                    <span aria-hidden="true" class="typcn typcn-video-outline"></span>
+                    <span aria-hidden="true" class="<?php echo $n3ico;?>"></span>
                 </div>
-                <h3>Lots Of Videos</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            <?php echo $n3;?>
             </div>
-            <div class="col-sm-4 features-box features-box-gray wow fadeInDown">
-                <div class="features-box-icon">
-                    <span aria-hidden="true" class="typcn typcn-device-phone"></span>
-                </div>
-                <h3>Mobile App</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-            </div>
-            <div class="col-sm-4 features-box wow fadeInUp">
-                <div class="features-box-icon">
-                    <span aria-hidden="true" class="typcn typcn-group-outline"></span>
-                </div>
-                <h3>Big Community</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-            </div>
+
+
+
         </div>
         <div class="row">
             <div class="col-sm-12 section-bottom-button wow fadeInUp">
-                <a class="btn btn-link-1 scroll-link" href="#top-content">Sign up now</a>
+                <a class="btn btn-link-1 scroll-link" href="#top-content">Cadastre-se</a>
             </div>
         </div>
     </div>
 </div>
-
-<!-- More features -->
-<div class="more-features-container section-container section-container-gray-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 more-features section-description wow fadeIn">
-                <h2>More features</h2>
-                <div class="divider-1 wow fadeInUp"><span></span></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-5 more-features-box wow fadeInLeft">
-                <img src="assets/img/devices/pc.png" alt="">
-            </div>
-            <div class="col-sm-7 more-features-box wow fadeInUp">
-                <div class="more-features-box-text">
-                    <div class="more-features-box-text-icon">
-                        <span aria-hidden="true" class="typcn typcn-attachment"></span>
-                    </div>
-                    <h3>Ut wisi enim ad minim</h3>
-                    <div class="more-features-box-text-description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-                        Ut wisi enim ad minim veniam, quis nostrud.
-                    </div>
-                </div>
-                <div class="more-features-box-text">
-                    <div class="more-features-box-text-icon">
-                        <span aria-hidden="true" class="typcn typcn-user"></span>
-                    </div>
-                    <h3>Quis nostrud exerci tat</h3>
-                    <div class="more-features-box-text-description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-                        Ut wisi enim ad minim veniam, quis nostrud.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?php endif;?>
 
 <!-- Always beautiful -->
 <div class="always-beautiful-container section-container">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 always-beautiful section-description wow fadeIn">
-                <h2>Always beautiful</h2>
+                <h2>Sobre nós</h2>
                 <div class="divider-1 wow fadeInUp"><span></span></div>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-7 always-beautiful-box wow fadeInLeft">
                 <div class="always-beautiful-box-text always-beautiful-box-text-left">
-                    <h3>Ut wisi enim ad minim</h3>
-                    <p class="medium-paragraph">
-                        Lorem ipsum dolor sit amet, <span class="colored-text">consectetur adipisicing</span> elit,
-                        sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-                        Ut wisi enim ad minim veniam, quis nostrud.
-                        Exerci tation ullamcorper suscipit <span class="colored-text">lobortis nisl</span> ut aliquip ex ea commodo consequat.
-                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl.
-                    </p>
+                   <?php echo $sobre;?>
                 </div>
             </div>
             <div class="col-sm-5 always-beautiful-box wow fadeInUp">
-                <img src="assets/img/devices/pc2.png" alt="">
+                <img style="width: 200px;" src="<?php echo base_url('assets/templates/landing/'.$version.'/img/backgrounds/3.png');?>" alt="">
             </div>
         </div>
     </div>
 </div>
 
-<!-- How it works -->
-<div class="how-it-works-container section-container section-container-image-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 how-it-works section-description wow fadeIn">
-                <h2>Ready in 4 steps</h2>
-                <div class="divider-1 wow fadeInUp"><span></span></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 col-sm-offset-1 how-it-works-box wow fadeInUp">
-                <div class="how-it-works-box-icon">
-                    <span aria-hidden="true" class="typcn typcn-pencil"></span>
-                    <span aria-hidden="true" class="how-it-works-step">1</span>
-                </div>
-                <h3>Sign up</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-            </div>
-            <div class="col-sm-4 col-sm-offset-2 how-it-works-box wow fadeInDown">
-                <div class="how-it-works-box-icon">
-                    <span aria-hidden="true" class="typcn typcn-ticket"></span>
-                    <span aria-hidden="true" class="how-it-works-step">2</span>
-                </div>
-                <h3>Make payment</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 col-sm-offset-1 how-it-works-box wow fadeInUp">
-                <div class="how-it-works-box-icon">
-                    <span aria-hidden="true" class="typcn typcn-key-outline"></span>
-                    <span aria-hidden="true" class="how-it-works-step">3</span>
-                </div>
-                <h3>Log in</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-            </div>
-            <div class="col-sm-4 col-sm-offset-2 how-it-works-box wow fadeInDown">
-                <div class="how-it-works-box-icon">
-                    <span aria-hidden="true" class="typcn typcn-thumbs-up"></span>
-                    <span aria-hidden="true" class="how-it-works-step">4</span>
-                </div>
-                <h3>Start learning</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 section-bottom-button wow fadeInUp">
-                <a class="btn btn-link-1 scroll-link" href="#top-content">Sign up now</a>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- Pricing -->
+<!-- Pacotes
 <div class="pricing-container section-container">
     <div class="container">
         <div class="row">
@@ -384,97 +331,24 @@ echo $this->head_ud->head(0,$version);
     </div>
 </div>
 
-<!-- Call to action -->
-<div class="call-action-narrador section-container section-container-image-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 call-to-action section-description wow fadeInLeftBig">
-                <h2>Call to action</h2>
-                <div class="divider-1 wow fadeInUp"><span></span></div>
-                <p>
-                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                    aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 section-bottom-button wow fadeInUp">
-                <a class="btn btn-link-1 scroll-link" href="#top-content">Sign up now</a>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- About us -->
-<div class="about-us-container section-container">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 about-us section-description wow fadeIn">
-                <h2>About us</h2>
-                <div class="divider-1 wow fadeInUp"><span></span></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 about-us-box wow fadeInUp">
-                <div class="about-us-photo">
-                    <img src="assets/img/about/1.jpg" alt="" data-at2x="assets/img/about/1.jpg">
-                    <div class="about-us-role">Marketing</div>
-                </div>
-                <h3>John Doe</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                <div class="about-us-social">
-                    <a href="#"><span class="typcn typcn-social-facebook"></span></a>
-                    <a href="#"><span class="typcn typcn-social-dribbble"></span></a>
-                    <a href="#"><span class="typcn typcn-social-twitter"></span></a>
-                </div>
-            </div>
-            <div class="col-sm-4 about-us-box wow fadeInDown">
-                <div class="about-us-photo">
-                    <img src="assets/img/about/2.jpg" alt="" data-at2x="assets/img/about/2.jpg">
-                    <div class="about-us-role">Designer</div>
-                </div>
-                <h3>Tim Brown</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                <div class="about-us-social">
-                    <a href="#"><span class="typcn typcn-social-facebook"></span></a>
-                    <a href="#"><span class="typcn typcn-social-dribbble"></span></a>
-                    <a href="#"><span class="typcn typcn-social-twitter"></span></a>
-                </div>
-            </div>
-            <div class="col-sm-4 about-us-box wow fadeInUp">
-                <div class="about-us-photo">
-                    <img src="assets/img/about/3.jpg" alt="" data-at2x="assets/img/about/3.jpg">
-                    <div class="about-us-role">Developer</div>
-                </div>
-                <h3>Sarah Red</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                <div class="about-us-social">
-                    <a href="#"><span class="typcn typcn-social-facebook"></span></a>
-                    <a href="#"><span class="typcn typcn-social-dribbble"></span></a>
-                    <a href="#"><span class="typcn typcn-social-twitter"></span></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- Testimonials -->
 <div class="testimonials-container section-container section-container-gray-bg">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 testimonials section-description wow fadeIn">
+            <div class="col-sm-12 testimonials section-description wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
                 <h2>Testimonials</h2>
-                <div class="divider-1 wow fadeInUp"><span></span></div>
+                <div class="divider-1 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"><span></span></div>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-10 col-sm-offset-1 testimonial-list wow fadeInUp">
+            <div class="col-sm-10 col-sm-offset-1 testimonial-list wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
                 <div role="tabpanel">
-                    <!-- Tab panes -->
+
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane fade in active" id="tab1">
                             <div class="testimonial-image">
-                                <img src="assets/img/testimonials/1.jpg" alt="" data-at2x="assets/img/testimonials/1.jpg">
+                                <img src="assets/img/testimonials/1.jpg" alt="" data-at2x="assets/img/testimonials/1.jpg" style="width: auto !important; height: auto !important;">
                                 <div class="testimonial-icon">
                                     <span aria-hidden="true" class="typcn typcn-pin"></span>
                                 </div>
@@ -490,7 +364,7 @@ echo $this->head_ud->head(0,$version);
                         </div>
                         <div role="tabpanel" class="tab-pane fade" id="tab2">
                             <div class="testimonial-image">
-                                <img src="assets/img/testimonials/2.jpg" alt="" data-at2x="assets/img/testimonials/2.jpg">
+                                <img src="assets/img/testimonials/2.jpg" alt="" data-at2x="assets/img/testimonials/2.jpg" style="width: auto !important; height: auto !important;">
                                 <div class="testimonial-icon">
                                     <span aria-hidden="true" class="typcn typcn-pin"></span>
                                 </div>
@@ -506,7 +380,7 @@ echo $this->head_ud->head(0,$version);
                         </div>
                         <div role="tabpanel" class="tab-pane fade" id="tab3">
                             <div class="testimonial-image">
-                                <img src="assets/img/testimonials/3.jpg" alt="" data-at2x="assets/img/testimonials/3.jpg">
+                                <img src="assets/img/testimonials/3.jpg" alt="" data-at2x="assets/img/testimonials/3.jpg" style="width: auto !important; height: auto !important;">
                                 <div class="testimonial-icon">
                                     <span aria-hidden="true" class="typcn typcn-pin"></span>
                                 </div>
@@ -522,7 +396,7 @@ echo $this->head_ud->head(0,$version);
                         </div>
                         <div role="tabpanel" class="tab-pane fade" id="tab4">
                             <div class="testimonial-image">
-                                <img src="assets/img/testimonials/4.jpg" alt="" data-at2x="assets/img/testimonials/4.jpg">
+                                <img src="assets/img/testimonials/4.jpg" alt="" data-at2x="assets/img/testimonials/4.jpg" style="width: auto !important; height: auto !important;">
                                 <div class="testimonial-icon">
                                     <span aria-hidden="true" class="typcn typcn-pin"></span>
                                 </div>
@@ -537,7 +411,6 @@ echo $this->head_ud->head(0,$version);
                             </div>
                         </div>
                     </div>
-                    <!-- Nav tabs -->
                     <ul class="nav nav-tabs" role="tablist">
                         <li role="presentation" class="active">
                             <a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab"></a>
@@ -558,7 +431,60 @@ echo $this->head_ud->head(0,$version);
     </div>
 </div>
 
-<!-- Footer -->
+-->
+<div id="contact" class="c-form-3-container section-container section-container-image-bg" style="background-image:url('<?php echo base_url('assets/templates/landing/'.$version.'/img/backgrounds/2.png');?>');  -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover; position: relative; z-index: 0;">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 c-form-3 section-description wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                <h2>Diga um oi</h2>
+                <div class="divider-1 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"><span></span></div>
+                <p>Tem alguma dúvida, sugestão ou quer simplesmente mandar um oi? Mande-nos uma mensagem e responderemos em breve.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 c-form-3-box wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+
+                <div class="c-form-3-top">
+                    <div class="c-form-3-top-left">
+                        <h3>Entre em contato</h3>
+                        <p>Prencha o formulario que responderemos em breve:</p>
+                    </div>
+                    <div class="c-form-3-top-right">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                </div>
+                <div class="c-form-3-bottom">
+                    <form method="post" action="" id="ajax_form">
+                        <div class="form-group">
+                            <label class="sr-only" for="c-form-3-email">E-mail</label>
+                            <input type="text" name="email" placeholder="E-mail..." class="c-form-3-email form-control" id="c-form-3-email">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="c-form-3-subject">Nome</label>
+                            <input type="text" name="nome" placeholder="Nome..." class="c-form-3-subject form-control" id="c-form-3-subject">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="c-form-3-message">Mensagem</label>
+                            <textarea name="mensagem" placeholder="Mensagem..." class="c-form-3-message form-control" id="c-form-3-message"></textarea>
+                        </div>
+                        <button  type="submit" class="btn"> Enviar Mensagem</button>
+                        <br>
+                        <b id="contatoSucess"></b>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <footer>
     <div class="container">
         <div class="row">
@@ -573,12 +499,11 @@ echo $this->head_ud->head(0,$version);
         </div>
         <div class="row">
             <div class="col-sm-12 footer-copyright">
-                &copy; Marco Bootstrap Template by <a href="http://azmind.com">Azmind</a>.
+                ©  Todos os direitos reservados <a href="http://www.narradorcast.com.br/">NarradorCast</a> <?php echo date('Y');?>.
             </div>
         </div>
     </div>
 </footer>
-
 
 <!-- MODAL: Privacy policy -->
 <div class="modal fade" id="modal-privacy" tabindex="-1" role="dialog" aria-labelledby="modal-privacy-label" aria-hidden="true">
@@ -586,42 +511,15 @@ echo $this->head_ud->head(0,$version);
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                    <span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span>
                 </button>
-                <h2 class="modal-title" id="modal-privacy-label">Privacy policy</h2>
+                <h2 class="modal-title" id="modal-privacy-label">Politica de privacidade</h2>
             </div>
             <div class="modal-body">
-                <h3>1. Dolor sit amet</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                </p>
-                <ul>
-                    <li>Easy To Use</li>
-                    <li>Awesome Design</li>
-                    <li>Cloud Based</li>
-                </ul>
-                <p>
-                    Ut wisi enim ad minim veniam, <a href="#">quis nostrud exerci tation</a> ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                    commodo consequat nostrud tation.
-                </p>
-                <h3>2. Sed do eiusmod</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                </p>
-                <h3>3. Nostrud exerci tation</h3>
-                <p>
-                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                    commodo consequat nostrud tation.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                </p>
+           <?php echo $plp;?>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn" data-dismiss="modal">Close</button>
+                <button type="button" class="btn" data-dismiss="modal">Fechar</button>
             </div>
         </div>
     </div>
@@ -633,44 +531,65 @@ echo $this->head_ud->head(0,$version);
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                    <span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span>
                 </button>
-                <h2 class="modal-title" id="modal-faq-label">Frequent questions</h2>
+                <h2 class="modal-title" id="modal-faq-label">Perguntas frequentes</h2>
             </div>
             <div class="modal-body">
-                <h3>1. Lorem ipsum dolor?</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                </p>
-                <h3>2. Ut wisi enim ad minim?</h3>
-                <p>
-                    Ut wisi enim ad minim veniam, <a href="#">quis nostrud exerci tation</a> ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                    commodo consequat nostrud tation.
-                </p>
-                <h3>3. Sed do eiusmod tempor?</h3>
-                <p>
-                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                </p>
-                <h3>4. Nostrud exerci tation?</h3>
-                <p>
-                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                    commodo consequat nostrud tation.
-                </p>
-                <h3>5. Consectetur adipisicing elit?</h3>
-                <p>
-                    Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                </p>
+                <?php echo $faq;?>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn" data-dismiss="modal">Close</button>
+                <button type="button" class="btn" data-dismiss="modal"><?php echo $_SESSION['ID'];?></button>
             </div>
         </div>
     </div>
 </div>
 
+<?php
 
+echo  $this->head_ud->js(0,$version);
+
+?>
+<script>
+    $(document).ready(function(){
+        $('#cadastro_form').validate({
+            rules: {
+                nome: { required: true, minlength: 2 },
+                sobrenome: { required: true, minlength: 2 },
+                email: { required: true, email: true },
+                senha: { required: true,  minlength: 6 }
+            },
+            messages: {
+                nome: { required: 'Preencha o campo nome', minlength: 'No mínimo 2 letras' },
+                sobrenome: { required: 'Preencha o campo nome', minlength: 'No mínimo 2 letras' },
+                email: { required: 'Informe o seu email', email: 'Ops, informe um email válido' },
+                senha: { required: 'Informe sua senha', email: 'No mínimo 6 caracteres' }
+
+            },
+            submitHandler: function( form ){
+                var dados = $( form ).serialize();
+
+                $.ajax({
+                    type: "POST",
+                    url: "cadastroForm",
+                    data: dados,
+                    success: function( data )
+                    {
+                        if(data == 11){
+                            window.location.reload();
+
+                        }else{
+
+                            $("#error").html(data);
+                        }
+                    }
+                });
+
+                return false;
+            }
+        });
+    });
+</script>
 </body>
 
 </html>
