@@ -1,5 +1,5 @@
 <?php
-echo $this->head_ud->head(2,$version);
+echo $this->head_ud->head(2,$version,$metas,$title);
 ?>
   <body>
     <header>

@@ -161,6 +161,47 @@ class Head_ud
 
 
 
+
+        if($guide == 2):
+            $charset = '<meta charset="UTF-8" />'.$this->quebra;
+
+            if(array_key_exists('title',$array) and !empty($array['title'])):
+
+                $title = '<meta name="title" content="'.$array['title'].'" />'.$this->quebra;
+                $title2 = '<meta property="og:title" content="'.$array['title'].'">'.$this->quebra;
+            else:
+
+                $title = '';
+                $title2 = '';
+
+
+            endif;
+
+            if(array_key_exists('description',$array) and !empty($array['description'])):
+
+
+                $description = '<meta name="description" content="'.$array['description'].'" />'.$this->quebra;
+                $description2 = '<meta property="og:description" content="'.$array['description'].'">'.$this->quebra;
+
+            else:
+                $description = '';
+                $description2 = '';
+
+            endif;
+
+            if(array_key_exists('keywords',$array) and !empty($array['keywords'])):
+
+                $keywords = '<meta name="keywords" content="'.$array['keywords'].'" />'.$this->quebra;
+
+            else:
+                $keywords = '';
+
+
+            endif;
+
+            $return = $title.$title2.$description.$description2.$keywords;
+
+        endif;
         return $return;
 
 
@@ -195,7 +236,7 @@ class Head_ud
 
             $return = '<!DOCTYPE html>' . $this->quebra . '
                 <html lang="pt-br">' . $this->quebra . '<head>' . $this->quebra . $this->meta($guide,$array) . $this->quebra . '
-               <title> Narrador Cast</title>' . $this->quebra.
+               <title>'.$title.'</title>' . $this->quebra.
                 $this->css(2,$version) . $this->quebra .
                 '
               </head> 
