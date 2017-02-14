@@ -117,7 +117,7 @@ echo '<link rel="stylesheet" href="'.base_url('assets/templates/landing/'.$versi
                                 </div><br>
                                 <b id="error"></b>
 
-                                <button type="submit" class="btn" onclick='$("#error").html("Aguarde...");'>Entrar!</button>
+                                <button type="submit" class="btn">Entrar!</button>
                             </form>
                         </div>
 

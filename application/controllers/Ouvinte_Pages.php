@@ -15,7 +15,15 @@ class Ouvinte_Pages extends CI_Controller
         if($this->sessionsverify_model->logver() == false):
             redirect(base_url(''), 'refresh');
         else:
-        $this->load->view('ouvinte/home');
+            $dados['metas'] = [
+                "title" => "NarradorCast | Seus podcasts favoritos em um só lugar.",
+                "description" => "Seus podcasts favoritos em um só lugar.",
+                "keywords" => "narradorcast, podcast,narrador,cast,narrador,melhores podcasts, plataforma,podcasters"
+            ];
+            $dados['title'] = 'NarradorCast | Seus podcasts favoritos em um só lugar.';
+            $dados['page'] = 'landing';
+            $dados['version'] = '1.6';
+            $this->load->view('ouvinte/home',$dados);
             endif;
     }
 
