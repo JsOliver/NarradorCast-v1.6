@@ -13,11 +13,14 @@ $route['translate_uri_dashes'] = FALSE;
 
         //Pagina de inicio
 
+        $route['home'] = 'Welcome/index';
         $route['login'] = 'Welcome/login';
         $route['cadastro'] = 'Welcome/cadastro';
         $route['sobre'] = 'Welcome/sobre';
         $route['contatoForm'] = 'Welcome/ajaxContact';
         $route['cadastroForm'] = 'Welcome/ajaxCadastro';
+        $route['loginForm'] = 'Welcome/ajaxLogin';
+        $route['logout'] = 'Welcome/logout';
 
 
     //Ouvinte Rotas das Paginas - Inicio

@@ -7,12 +7,12 @@ class Ouvinte_Pages extends CI_Controller
     {
         parent::__construct();
         $this->load->library('head_ud');
-        $this->load->library('SessionsVerify');
+        $this->load->model('sessionsverify_model');
 
     }
     public function index()
     {
-        if($this->load->SessionsVerify->logVer() == false):
+        if($this->sessionsverify_model->logver() == false):
             redirect(base_url(''), 'refresh');
         else:
         $this->load->view('ouvinte/home');

@@ -12,6 +12,30 @@ class Cadastro_Model extends CI_Model
     }
 
 
+    public function login($email,$pass,$fbid){
+
+        $this->db->from('users');
+        $this->db->where('email', $email);
+        $this->db->where('pass', hash('whirlpool',md5(sha1($pass))));
+        $this->db->or_where('fbid', $fbid);
+        $get = $this->db->get();
+        $count = $get->num_rows();
+        $result = $get->result_array();
+        if($count > 0):
+
+            $_SESSION['Auth01'] = true;
+            $_SESSION['NAME'] = $result[0]['firstname'].' '.$result[0]['lastname'];
+            $_SESSION['EMAIL'] = $result[0]['email'];
+            $_SESSION['PASS'] = $result[0]['pass'];
+            $_SESSION['ID'] = $result[0]['id'];
+            return 11;
+            else:
+                return 'Erro ao realizar o login, tente novamente.';
+
+                endif;
+
+    }
+
     public function cadastro($type, $email, $pass, $idfacebook, $firstname, $lastname, $about)
     {
 

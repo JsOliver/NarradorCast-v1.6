@@ -104,7 +104,7 @@ echo $this->head_ud->head(0,$version,$metas,$title);
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="index.html"><img class="img-responsive" style="width: 150px;float: left;margin: 0; padding: 0;" src="http://www.narradorcast.com.br/resources/images/icons/system/logo-large.png"></a>
+                <a href="<?php echo base_url('');?>"><img class="img-responsive" style="width: 150px;float: left;margin: 0; padding: 0;" src="<?php echo base_url('assets/templates/general/'.$version.'/img/logos/logo-large.png');?>"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="top-navbar-1">
