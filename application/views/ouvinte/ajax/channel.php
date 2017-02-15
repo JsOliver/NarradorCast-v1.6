@@ -76,7 +76,10 @@ Somos um podcast pernambucano, com um toque nerd, e falamos sobre filmes, s</spa
                             <ul class="list-group list-group-lg no-bg auto m-b-none m-t-n-xxs">
 
                                 <li class="list-group-item clearfix">
-
+                                    <a href="<?php echo base_url('episode/154');?>"class="jp-play-me pull-right m-t-sm m-l text-md">
+                                        <i class="icon-control-play text"></i>
+                                        <i class="icon-control-pause text-active"></i>
+                                    </a>
                                     <a href="<?php echo base_url('episode/154');?>" class="pull-left thumb-sm m-r">
                                         <img src="<?php echo base_url('assets/templates/ouvinte/'.$_POST['version'].'/');?>images/a0.png" alt="...">
                                     </a>

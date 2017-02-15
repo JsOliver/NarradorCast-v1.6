@@ -80,7 +80,7 @@
             <ul class="list-group no-bg no-borders auto m-t-n-xxs">
                 <li class="list-group-item">
                       <span class="pull-left thumb-xs m-t-xs avatar m-l-xs m-r-sm">
-                        <img src="images/a1.png" alt="..." class="img-circle">
+                        <img src="<?php echo base_url('assets/templates/ouvinte/'.$version.'/');?>images/a1.png" alt="..." class="img-circle">
                         <i class="on b-light right sm"></i>
                       </span>
                     <div class="clear">
@@ -88,116 +88,7 @@
                         <small class="text-muted">New York</small>
                     </div>
                 </li>
-                <li class="list-group-item">
-                      <span class="pull-left thumb-xs m-t-xs avatar m-l-xs m-r-sm">
-                        <img src="images/a2.png" alt="...">
-                        <i class="on b-light right sm"></i>
-                      </span>
-                    <div class="clear">
-                        <div><a href="#">Amanda Conlan</a></div>
-                        <small class="text-muted">France</small>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                      <span class="pull-left thumb-xs m-t-xs avatar m-l-xs m-r-sm">
-                        <img src="images/a3.png" alt="...">
-                        <i class="busy b-light right sm"></i>
-                      </span>
-                    <div class="clear">
-                        <div><a href="#">Dan Doorack</a></div>
-                        <small class="text-muted">Hamburg</small>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                      <span class="pull-left thumb-xs m-t-xs avatar m-l-xs m-r-sm">
-                        <img src="images/a4.png" alt="...">
-                        <i class="away b-light right sm"></i>
-                      </span>
-                    <div class="clear">
-                        <div><a href="#">Lauren Taylor</a></div>
-                        <small class="text-muted">London</small>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                      <span class="pull-left thumb-xs m-t-xs avatar m-l-xs m-r-sm">
-                        <img src="images/a5.png" alt="..." class="img-circle">
-                        <i class="on b-light right sm"></i>
-                      </span>
-                    <div class="clear">
-                        <div><a href="#">Chris Fox</a></div>
-                        <small class="text-muted">Milan</small>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                      <span class="pull-left thumb-xs m-t-xs avatar m-l-xs m-r-sm">
-                        <img src="images/a6.png" alt="...">
-                        <i class="on b-light right sm"></i>
-                      </span>
-                    <div class="clear">
-                        <div><a href="#">Amanda Conlan</a></div>
-                        <small class="text-muted">Copenhagen</small>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                      <span class="pull-left thumb-xs m-t-xs avatar m-l-xs m-r-sm">
-                        <img src="images/a7.png" alt="...">
-                        <i class="busy b-light right sm"></i>
-                      </span>
-                    <div class="clear">
-                        <div><a href="#">Dan Doorack</a></div>
-                        <small class="text-muted">Barcelona</small>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                      <span class="pull-left thumb-xs m-t-xs avatar m-l-xs m-r-sm">
-                        <img src="images/a8.png" alt="...">
-                        <i class="away b-light right sm"></i>
-                      </span>
-                    <div class="clear">
-                        <div><a href="#">Lauren Taylor</a></div>
-                        <small class="text-muted">Tokyo</small>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                      <span class="pull-left thumb-xs m-t-xs avatar m-l-xs m-r-sm">
-                        <img src="images/a9.png" alt="..." class="img-circle">
-                        <i class="on b-light right sm"></i>
-                      </span>
-                    <div class="clear">
-                        <div><a href="#">Chris Fox</a></div>
-                        <small class="text-muted">UK</small>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                      <span class="pull-left thumb-xs m-t-xs avatar m-l-xs m-r-sm">
-                        <img src="images/a1.png" alt="...">
-                        <i class="on b-light right sm"></i>
-                      </span>
-                    <div class="clear">
-                        <div><a href="#">Amanda Conlan</a></div>
-                        <small class="text-muted">Africa</small>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                      <span class="pull-left thumb-xs m-t-xs avatar m-l-xs m-r-sm">
-                        <img src="images/a2.png" alt="...">
-                        <i class="busy b-light right sm"></i>
-                      </span>
-                    <div class="clear">
-                        <div><a href="#">Dan Doorack</a></div>
-                        <small class="text-muted">Paris</small>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                      <span class="pull-left thumb-xs m-t-xs avatar m-l-xs m-r-sm">
-                        <img src="images/a3.png" alt="...">
-                        <i class="away b-light right sm"></i>
-                      </span>
-                    <div class="clear">
-                        <div><a href="#">Lauren Taylor</a></div>
-                        <small class="text-muted">Brussels</small>
-                    </div>
-                </li>
+
             </ul>
         </section>
         <footer class="footer footer-md bg-black">
@@ -259,7 +150,7 @@ echo  $this->head_ud->js(1,$version);
         });
 
 
-        $('body,html').animate({
+        $('#bjax-target').animate({
             scrollTop: 0
         }, 800);
         return false;
@@ -276,7 +167,17 @@ echo  $this->head_ud->js(1,$version);
         return false;});
 
 
+  $('#feed').click(function(){ResquestPage('<?php echo base_url('');?>feedpg',<?php echo $version;?>);
+        return false;
+  });
+
+    $('#descubra').click(function(){ResquestPage('<?php echo base_url('');?>descubrapg',<?php echo $version;?>);
+        return false;
+  });
+
+
 </script>
+
 
 </body>
 </html>

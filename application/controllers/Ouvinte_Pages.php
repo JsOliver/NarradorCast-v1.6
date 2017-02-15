@@ -45,6 +45,39 @@ class Ouvinte_Pages extends CI_Controller
         endif;
     }
 
+    public function feed()
+    {
+        if($this->sessionsverify_model->logver() == false):
+            redirect(base_url(''), 'refresh');
+        else:
+            $dados['metas'] = [
+                "title" => "NarradorCast | Seus podcasts favoritos em um só lugar.",
+                "description" => "Seus podcasts favoritos em um só lugar.",
+                "keywords" => "narradorcast, podcast,narrador,cast,narrador,melhores podcasts, plataforma,podcasters"
+            ];
+            $dados['title'] = 'NarradorCast | Seus podcasts favoritos em um só lugar.';
+            $dados['page'] = 'feedpg';
+            $dados['version'] = '1.6';
+            $this->load->view('ouvinte/feed',$dados);
+        endif;
+    }
+    public function descubra()
+    {
+        if($this->sessionsverify_model->logver() == false):
+            redirect(base_url(''), 'refresh');
+        else:
+            $dados['metas'] = [
+                "title" => "NarradorCast | Seus podcasts favoritos em um só lugar.",
+                "description" => "Seus podcasts favoritos em um só lugar.",
+                "keywords" => "narradorcast, podcast,narrador,cast,narrador,melhores podcasts, plataforma,podcasters"
+            ];
+            $dados['title'] = 'NarradorCast | Seus podcasts favoritos em um só lugar.';
+            $dados['page'] = 'descubrapg';
+            $dados['version'] = '1.6';
+            $this->load->view('ouvinte/descubra',$dados);
+        endif;
+    }
+
     public function episode()
     {
         if($this->sessionsverify_model->logver() == false):
@@ -69,6 +102,13 @@ class Ouvinte_Pages extends CI_Controller
 
     public function ajaxchannel(){
         $this->load->view('ouvinte/ajax/channel');
+    }
+
+    public function ajaxfeed(){
+        $this->load->view('ouvinte/ajax/feed');
+    }
+    public function ajaxdescubra(){
+        $this->load->view('ouvinte/ajax/descubra');
     }
 }
 

@@ -3,7 +3,7 @@ $this->load->view('ouvinte/fixed_files/header');
 ?>
     <script>
         window.onload = function () {
-            ResquestPage('<?php echo base_url('ch/');?>nerdcast',<?php echo $version;?>);
+            ResquestPage('<?php echo $page;?>',<?php echo $version;?>);
         }
     </script>
 
