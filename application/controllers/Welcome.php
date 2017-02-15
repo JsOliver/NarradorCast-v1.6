@@ -107,7 +107,7 @@ class Welcome extends CI_Controller
 
         if(isset($_POST['email']) and isset($_POST['senha'])):
 
-           echo $this->cadastro_model->login($_POST['email'], $_POST['senha'],'');
+           echo $this->cadastro_model->login(1,$_POST['email'], $_POST['senha'],'');
 
             endif;
             endif;

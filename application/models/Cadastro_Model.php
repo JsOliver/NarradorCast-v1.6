@@ -12,12 +12,18 @@ class Cadastro_Model extends CI_Model
     }
 
 
-    public function login($email,$pass,$fbid){
+    public function login($tp,$email,$pass,$fbid){
 
         $this->db->from('users');
+
+        if($tp == 1):
+            $this->db->where('email', $email);
+            $this->db->where('pass', hash('whirlpool',md5(sha1($pass))));
+        endif;
+        if($tp == 2):
         $this->db->where('email', $email);
-        $this->db->where('pass', hash('whirlpool',md5(sha1($pass))));
-        $this->db->or_where('fbid', $fbid);
+        $this->db->where('fbid', $fbid);
+        endif;
         $get = $this->db->get();
         $count = $get->num_rows();
         $result = $get->result_array();
@@ -30,7 +36,7 @@ class Cadastro_Model extends CI_Model
             $_SESSION['ID'] = $result[0]['id'];
             return 11;
             else:
-                return 'Erro ao realizar o login, tente novamente.';
+                return 'Email ou senha incorretos, tente novamente.';
 
                 endif;
 

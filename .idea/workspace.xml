@@ -21,23 +21,86 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Head_ud.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/libraries/Head_ud.php">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/ouvinte/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="298" column="58" selection-start-line="298" selection-start-column="58" selection-end-line="298" selection-end-column="58" />
+            <state relative-caret-position="153">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
               <folding>
-                <marker date="1487116025330" expanded="true" signature="6691:6906" ph="..." />
+                <element signature="e#206#970#0#HTML" expanded="false" />
+                <element signature="e#1128#1158#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apps.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/templates/ouvinte/1.6/css/apps.css">
+      <file leaf-file-name="channel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/ouvinte/channel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="4114" column="1" selection-start-line="4114" selection-start-column="1" selection-end-line="4114" selection-end-column="1" />
+            <state relative-caret-position="85">
+              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="58" />
+              <folding>
+                <element signature="e#337#367#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="channel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/ouvinte/ajax/channel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1072">
+              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#aside#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#aside#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#aside#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#aside#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#aside#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#aside#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#aside#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#li#5;n#ul#0;n#div#0;n#div#0;n#aside#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="episode.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/ouvinte/episode.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="67" column="37" selection-start-line="0" selection-start-column="64" selection-end-line="3993" selection-end-column="66" />
+              <folding>
+                <element signature="e#675#705#0#HTML" expanded="true" />
+                <element signature="e#1209#1241#0#HTML" expanded="true" />
+                <element signature="e#2412#2442#0#HTML" expanded="true" />
+                <element signature="e#5311#5331#0#HTML" expanded="true" />
+                <element signature="e#6465#6488#0#HTML" expanded="true" />
+                <element signature="e#7493#7517#0#HTML" expanded="true" />
+                <element signature="e#8459#8482#0#HTML" expanded="true" />
+                <element signature="e#9633#9660#0#HTML" expanded="true" />
+                <element signature="e#10242#10269#0#HTML" expanded="true" />
+                <element signature="e#11403#11430#0#HTML" expanded="true" />
+                <element signature="e#12020#12047#0#HTML" expanded="true" />
+                <element signature="e#12998#13016#0#HTML" expanded="true" />
+                <element signature="e#15539#15589#0#HTML" expanded="true" />
+                <element signature="e#20158#20179#0#HTML" expanded="true" />
+                <element signature="e#20355#20361#0#HTML" expanded="true" />
+                <element signature="e#23600#23606#0#HTML" expanded="true" />
+                <element signature="e#26136#26142#0#HTML" expanded="true" />
+                <element signature="e#29381#29387#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -46,22 +109,44 @@
       <file leaf-file-name="Ouvinte_Pages.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Ouvinte_Pages.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+            <state relative-caret-position="200">
+              <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/ouvinte/home.php">
+      <file leaf-file-name="plataform.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/ouvinte/ajax/plataform.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="34" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="34" />
+            <state relative-caret-position="288">
+              <caret line="75" column="110" selection-start-line="75" selection-start-column="110" selection-end-line="75" selection-end-column="110" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Head_ud.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/libraries/Head_ud.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
               <folding>
-                <element signature="e#67#92#0#HTML" expanded="true" />
-                <element signature="e#426#456#0#HTML" expanded="true" />
-                <element signature="e#24425#24430#0#HTML" expanded="true" />
+                <marker date="1487182789644" expanded="true" signature="6834:7049" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/ouvinte/fixed_files/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="229" column="30" selection-start-line="229" selection-start-column="26" selection-end-line="229" selection-end-column="30" />
+              <folding>
+                <element signature="n#footer#0;n#!!top" expanded="false" />
+                <element signature="n#aside#0;n#!!top" expanded="false" />
+                <marker date="1487184550282" expanded="true" signature="11421:11468" ph="..." />
               </folding>
             </state>
           </provider>
@@ -70,91 +155,11 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/ouvinte/fixed_files/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-952">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="426" selection-end-column="0" />
+            <state relative-caret-position="-62">
+              <caret line="115" column="87" selection-start-line="115" selection-start-column="87" selection-end-line="115" selection-end-column="87" />
               <folding>
-                <element signature="n#style#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#header#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#header#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#strong#0;n#div#0;n#section#0;n#section#0;n#li#0;n#ul#0;n#div#1;n#header#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#1;n#section#0;n#section#0;n#li#0;n#ul#0;n#div#1;n#header#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#section#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#section#0;n#section#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#section#0;n#section#0;n#aside#0;n#section#0;n#section#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#section#0;n#aside#0;n#section#0;n#section#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#section#0;n#section#0;n#section#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#section#0;n#section#0;n#section#0;n#section#0;n#section#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#aside#0;n#section#0;n#section#0;n#section#0;n#body#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Welcome.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Welcome.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="31" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Podcaster_Pages.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Podcaster_Pages.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="33" column="83" selection-start-line="28" selection-start-column="8" selection-end-line="33" selection-end-column="83" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="estatisticas.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/podcaster/pages/estatisticas.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="31" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/views/ouvinte/fixed_files/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="134" column="21" selection-start-line="125" selection-start-column="21" selection-end-line="134" selection-end-column="21" />
-              <folding>
-                <element signature="n#footer#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#video#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#5;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#5;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#div#8;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#9;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#div#10;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#div#11;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#div#12;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#div#2;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#section#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/welcome/acess/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="144" selection-end-column="2" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -167,11 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/libraries/styles/Head.php" />
-        <option value="$PROJECT_DIR$/application/libraries/Head.php" />
-        <option value="$PROJECT_DIR$/application/config/autoload.php" />
-        <option value="$PROJECT_DIR$/application/views/podcaster/menu-plataforma.php" />
-        <option value="$PROJECT_DIR$/application/views/podcaster/header.php" />
         <option value="$PROJECT_DIR$/application/views/podcaster/estatisticas.php" />
         <option value="$PROJECT_DIR$/application/views/podcaster/view/meu-podcast.php" />
         <option value="$PROJECT_DIR$/application/views/podcaster/view/estatisticas.php" />
@@ -205,19 +205,24 @@
         <option value="$PROJECT_DIR$/assets/templates/landing/1.6/js/contato.js" />
         <option value="$PROJECT_DIR$/application/libraries/SessionsVerify.php" />
         <option value="$PROJECT_DIR$/assets/templates/landing/1.6/css/login-forms.css" />
-        <option value="$PROJECT_DIR$/application/models/Cadastro_Model.php" />
-        <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/application/views/welcome/landing.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Welcome.php" />
         <option value="$PROJECT_DIR$/application/views/podcaster/fixed-files/header-footer/header.php" />
         <option value="$PROJECT_DIR$/application/controllers/Podcaster_Pages.php" />
         <option value="$PROJECT_DIR$/application/views/welcome/acess/login.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Ouvinte_Pages.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Welcome.php" />
+        <option value="$PROJECT_DIR$/application/models/Cadastro_Model.php" />
+        <option value="$PROJECT_DIR$/assets/templates/ouvinte/1.6/css/style.css" />
         <option value="$PROJECT_DIR$/assets/templates/ouvinte/1.6/css/apps.css" />
+        <option value="$PROJECT_DIR$/application/views/ouvinte/home.php" />
         <option value="$PROJECT_DIR$/application/views/ouvinte/fixed_files/header.php" />
         <option value="$PROJECT_DIR$/application/libraries/Head_ud.php" />
-        <option value="$PROJECT_DIR$/application/views/ouvinte/home.php" />
+        <option value="$PROJECT_DIR$/application/views/ouvinte/ajax/channel.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Ouvinte_Pages.php" />
+        <option value="$PROJECT_DIR$/application/views/ouvinte/episode.php" />
         <option value="$PROJECT_DIR$/application/views/ouvinte/fixed_files/footer.php" />
+        <option value="$PROJECT_DIR$/application/views/ouvinte/channel.php" />
+        <option value="$PROJECT_DIR$/application/config/routes.php" />
+        <option value="$PROJECT_DIR$/application/views/ouvinte/ajax/plataform.php" />
       </list>
     </option>
   </component>
@@ -259,8 +264,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -367,28 +370,84 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="narradorcast_v1.6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="narradorcast_v1.6" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="narradorcast_v1.6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="narradorcast_v1.6" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ouvinte" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="narradorcast_v1.6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="narradorcast_v1.6" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../4porcento" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../others/lancedecentavos" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\narradorcast_v1.6\assets\templates\podcaster\1.6" />
-      <recent name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\narradorcast_v1.6\assets\templates\landing\1.6" />
-      <recent name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\narradorcast_v1.6\application\views\podcaster\pages" />
-      <recent name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\narradorcast_v1.6\application\views\podcaster" />
-      <recent name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\narradorcast_v1.6\application\views" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\narradorcast_v1.6\assets\templates\ouvinte\1.6" />
       <recent name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\narradorcast_v1.6\assets\databases" />
       <recent name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\narradorcast_v1.6\assets\templates\general\1.6\img\logos" />
       <recent name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\narradorcast_v1.6\application\models" />
       <recent name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\narradorcast_v1.6\assets\templates\landing\1.6\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\narradorcast_v1.6\assets\templates\podcaster\1.6" />
+      <recent name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\narradorcast_v1.6\assets\templates\landing\1.6" />
+      <recent name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\narradorcast_v1.6\application\views\podcaster\pages" />
+      <recent name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\narradorcast_v1.6\application\views\podcaster" />
+      <recent name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\narradorcast_v1.6\application\views" />
     </key>
   </component>
   <component name="RunManager">
@@ -461,18 +520,21 @@
       <workItem from="1487003394681" duration="14693000" />
       <workItem from="1487073866859" duration="45000" />
       <workItem from="1487076088141" duration="12439000" />
-      <workItem from="1487112530558" duration="3602000" />
+      <workItem from="1487112530558" duration="3899000" />
+      <workItem from="1487116605210" duration="27000" />
+      <workItem from="1487158470336" duration="12898000" />
+      <workItem from="1487177624543" duration="6411000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58631000" />
+    <option name="totallyTimeSpent" value="78264000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2397882" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25113463" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -509,42 +571,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/podcaster/index.php" />
-    <entry file="file://$PROJECT_DIR$/assets/databases/DBv1-6.rar">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/podcaster/fixed-files/menu/menu-plataforma.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="86" selection-start-line="10" selection-start-column="86" selection-end-line="10" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/podcaster/pages/meu-podcast.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/podcaster/pages/redes/redes-sociais.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="801">
-          <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/welcome/acess/cadastro.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/templates/landing/css/bootstrap.min.css" />
     <entry file="file://$PROJECT_DIR$/assets/templates/landing/1.6/js/jquery-1.11.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -675,7 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -683,7 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -698,7 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -727,7 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="26" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -738,27 +760,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Cadastro_Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/podcaster/fixed-files/header-footer/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,7 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,135 +778,188 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="2" />
-          <folding>
-            <marker date="1487100068650" expanded="false" signature="11016:14399" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/welcome/acess/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="144" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/ouvinte/fixed_files.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Welcome.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="31" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/ouvinte/fixed_files.php" />
     <entry file="file://$PROJECT_DIR$/application/views/podcaster/pages/estatisticas.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="31" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Podcaster_Pages.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
+        <state relative-caret-position="561">
           <caret line="33" column="83" selection-start-line="28" selection-start-column="8" selection-end-line="33" selection-end-column="83" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Ouvinte_Pages.php">
+    <entry file="file://$PROJECT_DIR$/application/views/welcome/acess/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        <state relative-caret-position="-273">
+          <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="144" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Cadastro_Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="38" column="66" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Welcome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="111" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/templates/ouvinte/1.6/less/app.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/templates/ouvinte/1.6/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/templates/ouvinte/1.6/css/apps.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="4114" column="1" selection-start-line="4114" selection-start-column="1" selection-end-line="4114" selection-end-column="1" />
+        <state relative-caret-position="413">
+          <caret line="4090" column="5" selection-start-line="4090" selection-start-column="5" selection-end-line="4090" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/ouvinte/fixed_files/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-952">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="426" selection-end-column="0" />
+        <state relative-caret-position="-62">
+          <caret line="115" column="87" selection-start-line="115" selection-start-column="87" selection-end-line="115" selection-end-column="87" />
           <folding>
-            <element signature="n#style#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#header#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#header#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#strong#0;n#div#0;n#section#0;n#section#0;n#li#0;n#ul#0;n#div#1;n#header#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#section#0;n#section#0;n#li#0;n#ul#0;n#div#1;n#header#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#section#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#section#0;n#section#0;n#aside#0;n#section#0;n#section#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#section#0;n#aside#0;n#section#0;n#section#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#section#0;n#section#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#section#0;n#section#0;n#section#0;n#section#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#aside#0;n#section#0;n#section#0;n#section#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Ouvinte_Pages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/ouvinte/fixed_files/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="229" column="30" selection-start-line="229" selection-start-column="26" selection-end-line="229" selection-end-column="30" />
+          <folding>
+            <element signature="n#footer#0;n#!!top" expanded="false" />
+            <element signature="n#aside#0;n#!!top" expanded="false" />
+            <marker date="1487184550282" expanded="true" signature="11421:11468" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/ouvinte/channel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="58" />
+          <folding>
+            <element signature="e#337#367#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/libraries/Head_ud.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="298" column="58" selection-start-line="298" selection-start-column="58" selection-end-line="298" selection-end-column="58" />
+        <state relative-caret-position="170">
+          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
           <folding>
-            <marker date="1487116025330" expanded="true" signature="6691:6906" ph="..." />
+            <marker date="1487182789644" expanded="true" signature="6834:7049" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/ouvinte/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="34" />
+        <state relative-caret-position="153">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           <folding>
-            <element signature="e#67#92#0#HTML" expanded="true" />
-            <element signature="e#426#456#0#HTML" expanded="true" />
-            <element signature="e#24425#24430#0#HTML" expanded="true" />
+            <element signature="e#206#970#0#HTML" expanded="false" />
+            <element signature="e#1128#1158#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/ouvinte/fixed_files/footer.php">
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="134" column="21" selection-start-line="125" selection-start-column="21" selection-end-line="134" selection-end-column="21" />
+        <state relative-caret-position="340">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/ouvinte/episode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="67" column="37" selection-start-line="0" selection-start-column="64" selection-end-line="3993" selection-end-column="66" />
           <folding>
-            <element signature="n#footer#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#video#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#5;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#5;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#8;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#9;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#10;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#11;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#12;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#2;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
+            <element signature="e#675#705#0#HTML" expanded="true" />
+            <element signature="e#1209#1241#0#HTML" expanded="true" />
+            <element signature="e#2412#2442#0#HTML" expanded="true" />
+            <element signature="e#5311#5331#0#HTML" expanded="true" />
+            <element signature="e#6465#6488#0#HTML" expanded="true" />
+            <element signature="e#7493#7517#0#HTML" expanded="true" />
+            <element signature="e#8459#8482#0#HTML" expanded="true" />
+            <element signature="e#9633#9660#0#HTML" expanded="true" />
+            <element signature="e#10242#10269#0#HTML" expanded="true" />
+            <element signature="e#11403#11430#0#HTML" expanded="true" />
+            <element signature="e#12020#12047#0#HTML" expanded="true" />
+            <element signature="e#12998#13016#0#HTML" expanded="true" />
+            <element signature="e#15539#15589#0#HTML" expanded="true" />
+            <element signature="e#20158#20179#0#HTML" expanded="true" />
+            <element signature="e#20355#20361#0#HTML" expanded="true" />
+            <element signature="e#23600#23606#0#HTML" expanded="true" />
+            <element signature="e#26136#26142#0#HTML" expanded="true" />
+            <element signature="e#29381#29387#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/ouvinte/ajax/channel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1072">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#aside#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#aside#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#aside#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#aside#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#aside#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#aside#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#aside#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#5;n#ul#0;n#div#0;n#div#0;n#aside#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/ouvinte/ajax/plataform.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="75" column="110" selection-start-line="75" selection-start-column="110" selection-end-line="75" selection-end-column="110" />
+          <folding />
         </state>
       </provider>
     </entry>

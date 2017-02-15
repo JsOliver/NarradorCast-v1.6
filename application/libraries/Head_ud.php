@@ -51,7 +51,11 @@ class Head_ud
     <link rel="stylesheet" href="' . base_url('assets/templates/ouvinte/' . $version . '/') . 'css/font.css" type="text/css" />
     <link rel="stylesheet" href="' . base_url('assets/templates/ouvinte/' . $version . '/') . 'css/app.css" type="text/css" />
     <link rel="stylesheet" href="' . base_url('assets/templates/ouvinte/' . $version . '/') . 'css/apps.css" type="text/css" />
+    <link rel="stylesheet" href="' . base_url('assets/templates/ouvinte/' . $version . '/') . 'css/style.css" type="text/css" />
             
+    <script src="' . base_url('assets/templates/ouvinte/' . $version . '/') . 'js/ie/html5shiv.js"></script>
+    <script src="' . base_url('assets/templates/ouvinte/' . $version . '/') . 'js/ie/respond.min.js"></script>
+    <script src="' . base_url('assets/templates/ouvinte/' . $version . '/') . 'js/ie/excanvas.js"></script>
            
             ';
 
@@ -107,17 +111,16 @@ class Head_ud
             $return = '
             
        
-                            
-                <script src="'.base_url('assets/templates/ouvinte/'.$version.'/js/jquery.min.js').'"></script>
-                <!-- Bootstrap -->
-                <script src="'.base_url('assets/templates/ouvinte/'.$version.'/js/bootstrap.js').'"></script>
-                <!-- App -->
-                <script src="'.base_url('assets/templates/ouvinte/'.$version.'/js/app.js').'"></script>
-                <script src="'.base_url('assets/templates/ouvinte/'.$version.'/js/slimscroll/jquery.slimscroll.min.js').'"></script>
-                <script src="'.base_url('assets/templates/ouvinte/'.$version.'/js/app.plugin.js').'"></script>
-                <script type="text/javascript" src="'.base_url('assets/templates/ouvinte/'.$version.'/js/jPlayer/jquery.jplayer.min.js').'"></script>
-                <script type="text/javascript" src="'.base_url('assets/templates/ouvinte/'.$version.'/js/jPlayer/add-on/jplayer.playlist.min.js').'"></script>
-                <script type="text/javascript" src="'.base_url('assets/templates/ouvinte/'.$version.'/js/jPlayer/demo.js').'"></script>
+                         <script src="' . base_url('assets/templates/ouvinte/' . $version . '/') . 'js/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="' . base_url('assets/templates/ouvinte/' . $version . '/') . 'js/bootstrap.js"></script>
+  <!-- App -->
+  <script src="' . base_url('assets/templates/ouvinte/' . $version . '/') . 'js/app.js"></script>  
+  <script src="' . base_url('assets/templates/ouvinte/' . $version . '/') . 'js/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="' . base_url('assets/templates/ouvinte/' . $version . '/') . 'js/app.plugin.js"></script>
+  <script type="text/javascript" src="' . base_url('assets/templates/ouvinte/' . $version . '/') . 'js/jPlayer/jquery.jplayer.min.js"></script>
+                                   
+          
             ';
 
         endif;
@@ -296,7 +299,9 @@ class Head_ud
         if ($guide == 1):
 
             $return = '<!DOCTYPE html>' . $this->quebra . '
-                <html lang="pt-br" style="overflow:hidden;">' . $this->quebra . '<head>' . $this->quebra . $this->meta($guide, $array) . $this->quebra . '
+                <html class="app" lang="pt-br" 
+                
+                >' . $this->quebra . '<head>' . $this->quebra . $this->meta($guide, $array) . $this->quebra . '
                <title>' . $title . '</title>' . $this->quebra .
                 $this->css($guide, $version) . $this->quebra .
                 '
