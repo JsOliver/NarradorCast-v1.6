@@ -28,12 +28,16 @@ $route['translate_uri_dashes'] = FALSE;
         $route['plataform'] = 'ouvinte_pages/index';
         $route['feed'] = 'ouvinte_pages/feed';
         $route['descubra'] = 'ouvinte_pages/descubra';
+        $route['categoria'] = 'ouvinte_pages/categoria';
+        $route['populares'] = 'ouvinte_pages/populares';
         $route['plataformpg'] = 'ouvinte_pages/plataform';
         $route['feedpg'] = 'ouvinte_pages/ajaxfeed';
+        $route['categoriapg'] = 'ouvinte_pages/ajaxcategoria';
         $route['descubrapg'] = 'ouvinte_pages/ajaxdescubra';
+        $route['popularespg'] = 'ouvinte_pages/ajaxpopulares';
         $route['ch/(.+)'] = 'ouvinte_pages/ajaxchannel';
         $route['ouvir/(.+)'] = 'ouvinte_pages/episode/$1';
-        $route['canal/(.+)'] = 'ouvinte_pages/channel/$1';
+        $route['(@)(:any)'] = 'ouvinte_pages/channel/$1';
 
     //Podcaster Rotas das Paginas - Fim
 

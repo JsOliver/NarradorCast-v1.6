@@ -1,4 +1,8 @@
+<script>
 
+    window.history.pushState("", "", "<?php echo base_url('feed')?>");
+
+</script>
     <section class="scrollable padder-lg w-f-md" id="bjax-target">
         <a href="#" class="pull-right text-muted m-t-lg" data-toggle="class:fa-spin"><i  class="icon-refresh i-lg  inline" id="refresh"></i></a>
         <h2 class="font-thin m-b">Meu Feed <span class="musicbar inline m-l-sm" style="width:20px;height:20px">
@@ -28,7 +32,7 @@
                                 <i class="fa fa-star-o text-muted"></i>
                             </div>
                             <div class="center text-center m-t-n">
-                                <a href="#"><i class="icon-control-play i-2x"></i></a>
+                                <a href="<?php echo base_url('ouvir/nerdcast-rpg-o-corvo-a-dama-e-a-piriguete/154');?>"><i class="icon-control-play i-2x"></i></a>
                             </div>
                             <div class="bottom padder m-b-sm">
                                 <a href="#" class="pull-right">
@@ -42,7 +46,7 @@
                         <a href="#"><img src="<?php echo base_url('assets/templates/ouvinte/'.$_POST['version'].'/');?>images/p1.jpg" alt="" class="r r-2x img-full"></a>
                     </div>
                     <div class="padder-v">
-                        <a href="#" class="text-ellipsis">Tempered Song</a>
+                        <a href="<?php echo base_url('ouvir/nerdcast-rpg-o-corvo-a-dama-e-a-piriguete/154');?>"class="text-ellipsis">Tempered Song</a>
                         <a id="channelLink" onclick=" ResquestPage('<?php echo base_url('ch/');?>nerdcast',<?php echo $_POST['version'];?>); return false;" href="<?php echo base_url('channel');?>" class="text-ellipsis text-xs text-muted">Miaow</a>
                     </div>
                 </div>

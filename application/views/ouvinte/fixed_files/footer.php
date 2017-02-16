@@ -1,4 +1,5 @@
 </div>
+
 <footer class="footer bg-dark">
     <div id="jp_container_N">
         <div class="jp-type-playlist">
@@ -175,9 +176,26 @@ echo  $this->head_ud->js(1,$version);
         return false;
   });
 
+    $('#categoria').click(function(){ResquestPage('<?php echo base_url('');?>categoriapg',<?php echo $version;?>);
+        return false;
+  });
+    $('#populares').click(function(){ResquestPage('<?php echo base_url('');?>popularespg',<?php echo $version;?>);
+        return false;
+  });
+
 
 </script>
+<script>
+    function time() {
 
+
+      var time =  $("#jplayer_N").jPlayer()[0].childNodes[1].currentTime;
+
+
+        alert(time);
+
+    }
+</script>
 
 </body>
 </html>

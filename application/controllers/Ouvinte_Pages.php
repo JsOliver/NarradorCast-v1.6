@@ -77,6 +77,41 @@ class Ouvinte_Pages extends CI_Controller
             $this->load->view('ouvinte/descubra',$dados);
         endif;
     }
+  public function categoria()
+    {
+        if($this->sessionsverify_model->logver() == false):
+            redirect(base_url(''), 'refresh');
+        else:
+            $dados['metas'] = [
+                "title" => "NarradorCast | Seus podcasts favoritos em um só lugar.",
+                "description" => "Seus podcasts favoritos em um só lugar.",
+                "keywords" => "narradorcast, podcast,narrador,cast,narrador,melhores podcasts, plataforma,podcasters"
+            ];
+            $dados['title'] = 'NarradorCast | Seus podcasts favoritos em um só lugar.';
+            $dados['page'] = 'categoriapg';
+            $dados['version'] = '1.6';
+            $this->load->view('ouvinte/categoria',$dados);
+        endif;
+    }
+
+  public function populares()
+    {
+        if($this->sessionsverify_model->logver() == false):
+            redirect(base_url(''), 'refresh');
+        else:
+            $dados['metas'] = [
+                "title" => "NarradorCast | Seus podcasts favoritos em um só lugar.",
+                "description" => "Seus podcasts favoritos em um só lugar.",
+                "keywords" => "narradorcast, podcast,narrador,cast,narrador,melhores podcasts, plataforma,podcasters"
+            ];
+            $dados['title'] = 'NarradorCast | Seus podcasts favoritos em um só lugar.';
+            $dados['page'] = 'popularespg';
+            $dados['version'] = '1.6';
+            $this->load->view('ouvinte/categoria',$dados);
+        endif;
+    }
+
+
 
     public function episode()
     {
@@ -107,8 +142,14 @@ class Ouvinte_Pages extends CI_Controller
     public function ajaxfeed(){
         $this->load->view('ouvinte/ajax/feed');
     }
+    public function ajaxcategoria(){
+        $this->load->view('ouvinte/ajax/categoria');
+    }
     public function ajaxdescubra(){
         $this->load->view('ouvinte/ajax/descubra');
+    }
+    public function ajaxpopulares(){
+        $this->load->view('ouvinte/ajax/populares');
     }
 }
 

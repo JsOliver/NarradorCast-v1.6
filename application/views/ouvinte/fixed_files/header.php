@@ -51,7 +51,7 @@ echo $this->head_ud->head(1,$version,$metas,$title); ?>
                     <section class="dropdown-menu aside-xl animated fadeInUp">
                         <section class="panel bg-white">
                             <div class="panel-heading b-light bg-light">
-                                <strong>You have <span class="count">2</span> notifications</strong>
+                                <strong onclick="time();">You have <span class="count">2</span> notifications</strong>
                             </div>
                             <div class="list-group list-group-alt">
                                 <a href="#" class="media list-group-item">
@@ -103,7 +103,7 @@ echo $this->head_ud->head(1,$version,$metas,$title); ?>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="modal.lockme.html" data-toggle="ajaxModal" >Logout</a>
+                            <a href="<?php echo base_url('logout');?>" >Logout</a>
                         </li>
                     </ul>
                 </li>
@@ -134,20 +134,20 @@ echo $this->head_ud->head(1,$version,$metas,$title); ?>
                                         </a>
                                     </li>
                                     <li>
-                                        <a id="descubra" href="<?php echo base_url('feed');?>">
+                                        <a id="descubra" href="<?php echo base_url('descubra');?>">
                                             <i class="icon-music-tone-alt icon text-info"></i>
                                             <span class="font-bold">Descubra</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="events.html">
+                                        <a id="categoria" href="<?php echo base_url('categoria');?>">
                                             <i class="icon-drawer icon text-primary-lter"></i>
                                             <b class="badge bg-primary pull-right">6</b>
                                             <span class="font-bold">Categorias</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="listen.html">
+                                        <a id="populares" href="<?php echo base_url('populares');?>">
                                             <i class="icon-fire icon text-danger-lter text-danger-dker"></i>
                                             <b class="badge bg-danger pull-right">6</b>
                                             <span class="font-bold">Populares</span>

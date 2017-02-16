@@ -1,4 +1,8 @@
+<script>
 
+    window.history.pushState("", "", "<?php echo base_url('plataform')?>");
+
+</script>
 <div class="">
     <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="2500">
         <!-- Wrapper for slides -->
@@ -73,14 +77,14 @@
                         <div class="pos-rlt">
                             <div class="item-overlay opacity r r-2x bg-black">
                                 <div class="center text-center m-t-n">
-                                    <a id="channelLink"  onclick=" ResquestPage('<?php echo base_url('ch/');?>nerdcast',<?php echo $_POST['version'];?>); return false;" href="<?php echo base_url('channel');?>"><i class="fa fa-play-circle i-2x"></i></a>
+                                    <a id="channelLink"  onclick=" ResquestPage('<?php echo base_url('ch/');?>channel',<?php echo $_POST['version'];?>); return false;" href="<?php echo base_url('@channel');?>"><i class="fa fa-play-circle i-2x"></i></a>
                                 </div>
                             </div>
-                            <a id="channelLink" onclick=" ResquestPage('<?php echo base_url('ch/');?>nerdcast',<?php echo $_POST['version'];?>); return false;" href="<?php echo base_url('channel');?>"><img src="<?php echo base_url('assets/templates/ouvinte/'.$_POST['version'].'/');?>images/a2.png" alt="" class="r r-2x img-full"></a>
+                            <a id="channelLink" onclick=" ResquestPage('<?php echo base_url('ch/');?>channel',<?php echo $_POST['version'];?>); return false;" href="<?php echo base_url('@channel');?>"><img src="<?php echo base_url('assets/templates/ouvinte/'.$_POST['version'].'/');?>images/a2.png" alt="" class="r r-2x img-full"></a>
                         </div>
                         <div class="padder-v">
-                            <a id="channelLink" onclick=" ResquestPage('<?php echo base_url('ch/');?>nerdcast',<?php echo $_POST['version'];?>);return false; " href="<?php echo base_url('channel');?>" class="text-ellipsis">Spring rain</a>
-                            <a id="channelLink" onclick=" ResquestPage('<?php echo base_url('ch/');?>nerdcast',<?php echo $_POST['version'];?>); return false;" href="<?php echo base_url('channel');?>" class="text-ellipsis text-xs text-muted">Miaow</a>
+                            <a id="channelLink" onclick=" ResquestPage('<?php echo base_url('ch/');?>channel',<?php echo $_POST['version'];?>);return false; " href="<?php echo base_url('@channel');?>" class="text-ellipsis">Spring rain</a>
+                            <a id="channelLink" onclick=" ResquestPage('<?php echo base_url('ch/');?>channel',<?php echo $_POST['version'];?>); return false;" href="<?php echo base_url('@channel');?>" class="text-ellipsis text-xs text-muted">Miaow</a>
                         </div>
                     </div>
                 </div>
