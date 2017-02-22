@@ -3,7 +3,7 @@ $this->load->view('ouvinte/fixed_files/header');
 ?>
     <script>
         window.onload = function () {
-            ResquestPage('<?php echo base_url('ch/'.$this->uri->segment(1));?>',<?php echo $version;?>);
+            ResquestPage('<?php echo base_url($page.'/'.$cts);?>',<?php echo $version;?>);
         }
     </script>
 

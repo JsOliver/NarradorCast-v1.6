@@ -22,7 +22,7 @@
 }
 #custom_carousel .controls li.active {
     background-color:#eee;
-    border-top:3px solid orange;
+    border-top:3px solid #31974f;
 }
 #custom_carousel .controls a small {
     overflow:hidden;

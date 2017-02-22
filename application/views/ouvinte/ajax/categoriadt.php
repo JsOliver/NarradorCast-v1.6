@@ -1,46 +1,31 @@
+<?php
+
+$explode = explode('/',$_POST['page']);
+$count = count($explode);
+
+?>
+<script>
+
+    window.history.pushState("", "", "<?php echo base_url('categoria/'.$explode[$count - 1]);?>");
+
+</script>
+
+
 <section class="scrollable padder-lg w-f-md" id="bjax-target">
     <a href="#" class="pull-right text-muted m-t-lg" data-toggle="class:fa-spin"><i  class="icon-refresh i-lg  inline" id="refresh"></i></a>
-    <h2 class="font-thin m-b">Descubra Novos Podcasts <span class="musicbar inline m-l-sm" style="width:20px;height:20px">
+    <h2 class="font-thin m-b">Exibindo Episódios de <b><?php echo ucwords($explode[$count - 1]);?></b> <span class="musicbar inline m-l-sm" style="width:20px;height:20px">
                     <span class="bar1 a1 bg-primary lter"></span>
                     <span class="bar2 a2 bg-info lt"></span>
                     <span class="bar3 a3 bg-success"></span>
                     <span class="bar4 a4 bg-warning dk"></span>
                     <span class="bar5 a5 bg-danger dker"></span>
                   </span></h2>
+    <div class="row row-sm">
 
-            <div class="col-md-12">
-                <div class="row row-sm">
-                    <?php
-                    for($i=0;$i<4;$i++):
-                    ?>
-                    <div class="col-xs-6 col-sm-3">
-                        <div class="item">
-                            <div class="pos-rlt">
-                                <div class="item-overlay opacity r r-2x bg-black">
-                                    <div class="center text-center m-t-n">
-                                        <a id="channelLink" onclick=" ResquestPage('<?php echo base_url('ch/');?>nerdcast',<?php echo $_POST['version'];?>); return false;" href="<?php echo base_url('channel');?>"><i class="fa fa-info-circle i-2x"></i></a>
-                                    </div>
-                                </div>
-                                <a id="channelLink" onclick=" ResquestPage('<?php echo base_url('ch/');?>nerdcast',<?php echo $_POST['version'];?>); return false;" href="<?php echo base_url('channel');?>"><img src="<?php echo base_url('assets/templates/ouvinte/'.$_POST['version'].'/');?>images/a2.png" alt="" class="r r-2x img-full"></a>
-                            </div>
-                            <div class="padder-v">
-                                <a id="channelLink" onclick=" ResquestPage('<?php echo base_url('ch/');?>nerdcast',<?php echo $_POST['version'];?>); return false;" href="<?php echo base_url('channel');?>" class="text-ellipsis">Spring rain</a>
-                                <a id="channelLink" onclick=" ResquestPage('<?php echo base_url('ch/');?>nerdcast',<?php echo $_POST['version'];?>); return false;" href="<?php echo base_url('channel');?>"href="#" class="text-ellipsis text-xs text-muted">Miaow</a>
-                            </div>
-                        </div>
-                    </div>
-                  <?php endfor;?>
-                </div>
-            </div>
-
-    <div class="col-md-12">
-        <h3 class="font-thin">Episódios Recomendados</h3>
-        <div class="row row-sm">
         <?php
         for($i=0;$i<40;$i++):
             ?>
             <div class="col-xs-5 col-sm-2 col-md-3 col-lg-3">
-
                 <div class="item">
                     <div class="pos-rlt">
                         <div class="bottom">
@@ -69,14 +54,13 @@
                         <a href="#"><img src="<?php echo base_url('assets/templates/ouvinte/'.$_POST['version'].'/');?>images/p1.jpg" alt="" class="r r-2x img-full"></a>
                     </div>
                     <div class="padder-v">
-                        <a href="<?php echo base_url('ouvir/nerdcast-rpg-o-corvo-a-dama-e-a-piriguete/154');?>" class="text-ellipsis">Tempered Song</a>
+                        <a href="<?php echo base_url('ouvir/nerdcast-rpg-o-corvo-a-dama-e-a-piriguete/154');?>"class="text-ellipsis">Tempered Song</a>
                         <a id="channelLink" onclick=" ResquestPage('<?php echo base_url('ch/');?>nerdcast',<?php echo $_POST['version'];?>); return false;" href="<?php echo base_url('channel');?>" class="text-ellipsis text-xs text-muted">Miaow</a>
                     </div>
                 </div>
             </div>
         <?php endfor;?>
 
-        </div>
 
 
     </div>
@@ -89,8 +73,3 @@
     </nav>
 </section>
 
-<script>
-
-    window.history.pushState("", "", "<?php echo base_url('descubra')?>");
-
-</script>

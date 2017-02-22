@@ -1,18 +1,18 @@
 <?php
 $this->load->view('ouvinte/fixed_files/header');
 ?>
+
     <script>
         window.onload = function () {
-            ResquestPage('<?php echo base_url('ch/'.$this->uri->segment(1));?>',<?php echo $version;?>);
+            ResquestPage('<?php echo base_url($page);?>',<?php echo $version;?>);
         }
     </script>
-
 
 
     <section id="content">
 
         <section class="vbox">
-            <section class="scrollable padder-lg w-f-md" style="padding: 0;z-index: 0;" id="bjax-target">
+            <section class="scrollable padder-lg w-f-md" style="padding: 0;z-index: 0; float: left;" id="bjax-target">
 
 
 

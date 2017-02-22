@@ -32,7 +32,7 @@ $this->load->view('ouvinte/fixed_files/header');
     }
     #custom_carousel .controls li.active {
         background-color:#eee;
-        border-top:3px solid orange;
+        border-top:3px solid #30944c;
     }
     #custom_carousel .controls a small {
         overflow:hidden;

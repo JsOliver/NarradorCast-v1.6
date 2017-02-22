@@ -1,27 +1,30 @@
-
 </div>
 
 <style>
 
-    .chat-window{
-        position:fixed;
-        float:right;
+    .chat-window {
+        position: fixed;
+        float: right;
         bottom: -20px;
-        margin-left:10px;
+        margin-left: 10px;
     }
-    .chat-window > div > .panel{
+
+    .chat-window > div > .panel {
         border-radius: 5px 5px 0 0;
     }
-    .icon_minim{
-        padding:2px 10px;
+
+    .icon_minim {
+        padding: 2px 10px;
     }
-    .msg_container_base{
+
+    .msg_container_base {
         background: #e5e5e5;
         margin: 0;
         padding: 0 10px 10px;
-        max-height:300px;
-        overflow-x:hidden;
+        max-height: 300px;
+        overflow-x: hidden;
     }
+
     .top-bar {
         background: #666;
         color: white;
@@ -29,29 +32,35 @@
         position: relative;
         overflow: hidden;
     }
-    .msg_receive{
-        padding-left:0;
-        margin-left:0;
+
+    .msg_receive {
+        padding-left: 0;
+        margin-left: 0;
     }
-    .msg_sent{
-        padding-bottom:20px !important;
-        margin-right:0;
+
+    .msg_sent {
+        padding-bottom: 20px !important;
+        margin-right: 0;
     }
+
     .messages {
         background: white;
         padding: 10px;
         border-radius: 2px;
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-        max-width:100%;
+        max-width: 100%;
     }
+
     .messages > p {
         font-size: 13px;
         margin: 0 0 0.2rem 0;
     }
+
     .messages > time {
         font-size: 11px;
         color: #ccc;
     }
+
     .msg_container {
         padding: 10px;
         overflow: hidden;
@@ -61,6 +70,7 @@
     .avatar {
         position: relative;
     }
+
     .base_receive > .avatar:after {
         content: "";
         position: absolute;
@@ -77,6 +87,7 @@
         justify-content: flex-end;
         align-items: flex-end;
     }
+
     .base_sent > .avatar:after {
         content: "";
         position: absolute;
@@ -87,37 +98,33 @@
         border: 5px solid white;
         border-right-color: transparent;
         border-top-color: transparent;
-        box-shadow: 1px 1px 2px rgba(black, 0.2); // not quite perfect but close
+        box-shadow: 1px 1px 2px rgba(black, 0.2);
+    / / not quite perfect but close
     }
 
-    .msg_sent > time{
+    .msg_sent > time {
         float: right;
     }
 
-
-
-    .msg_container_base::-webkit-scrollbar-track
-    {
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    .msg_container_base::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
         background-color: #F5F5F5;
     }
 
-    .msg_container_base::-webkit-scrollbar
-    {
+    .msg_container_base::-webkit-scrollbar {
         width: 12px;
         background-color: #F5F5F5;
     }
 
-    .msg_container_base::-webkit-scrollbar-thumb
-    {
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    .msg_container_base::-webkit-scrollbar-thumb {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
         background-color: #555;
     }
 
-    .btn-group.dropup{
-        position:fixed;
-        left:0px;
-        bottom:0;
+    .btn-group.dropup {
+        position: fixed;
+        left: 0px;
+        bottom: 0;
     }
 </style>
 <footer class="footer bg-dark" style="z-index: 0;">
@@ -138,7 +145,8 @@
                         </div>
                         <div><a class="jp-next"><i class="icon-control-forward i-lg"></i></a></div>
                         <div class="hide"><a class="jp-stop"><i class="fa fa-stop"></i></a></div>
-                        <div><a class="" data-toggle="dropdown" data-target="#playlist"><i class="icon-list"></i></a></div>
+                        <div><a class="" data-toggle="dropdown" data-target="#playlist"><i class="icon-list"></i></a>
+                        </div>
                         <div class="jp-progress hidden-xs">
                             <div class="jp-seek-bar dk">
                                 <div class="jp-play-bar bg-info">
@@ -171,7 +179,8 @@
                         </div>
                         <div class="hide">
                             <a class="jp-full-screen" title="full screen"><i class="fa fa-expand"></i></a>
-                            <a class="jp-restore-screen" title="restore screen"><i class="fa fa-compress text-lt"></i></a>
+                            <a class="jp-restore-screen" title="restore screen"><i
+                                    class="fa fa-compress text-lt"></i></a>
                         </div>
                     </div>
                 </div>
@@ -184,7 +193,8 @@
             </div>
             <div class="jp-no-solution hide">
                 <span>Update Required</span>
-                To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                To play the media you will need to either update your browser to a recent version or update your <a
+                    href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
             </div>
         </div>
     </div>
@@ -198,18 +208,42 @@
 <aside class="aside-md bg-light dk" id="sidebar">
     <section class="vbox animated fadeInRight">
         <section class="w-f-md scrollable hover">
-            <h4 class="font-thin m-l-md m-t">Connected</h4>
+
             <ul class="list-group no-bg no-borders auto m-t-n-xxs">
-                <li class="list-group-item">
+                <ul style="position:fixed;background:#dfe9eb;width: 100%; z-index: 1;" class="nav nav-tabs" id="SidePages">
+                    <li role="presentation" class="active">
+                        <a style="cursor: pointer;" href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i
+                                class="fa  fa-microphone" aria-hidden="true"></i></a></li>
+                    <li role="presentation">
+                        <a style="cursor: pointer;"  href="#messages" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa  fa-user" aria-hidden="true"></i></a></li>
+                    <li role="presentation">
+                        <a style="cursor: pointer;"  href="#settings" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-clock-o" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+                <br><br>
+
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="profile">
+                        <?php for($i=0;$i<50;$i++):?>
+                        <li class="list-group-item">
                       <span class="pull-left thumb-xs m-t-xs avatar m-l-xs m-r-sm">
-                        <img src="<?php echo base_url('assets/templates/ouvinte/'.$version.'/');?>images/a1.png" alt="..." class="img-circle">
+                        <img src="<?php echo base_url('assets/templates/ouvinte/' . $version . '/'); ?>images/a1.png"
+                             alt="..." class="img-circle">
                         <i class="on b-light right sm"></i>
                       </span>
-                    <div class="clear">
-                        <div><a href="#">Chris Fox</a></div>
-                        <small class="text-muted">New York</small>
+                            <div class="clear">
+                                <div><a href="#">Chris Fox</a></div>
+                                <small class="text-muted">New York</small>
+                            </div>
+                        </li>
+                    <?php endfor;?>
+
                     </div>
-                </li>
+                    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+                    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+                </div>
+
+
 
             </ul>
         </section>
@@ -218,9 +252,11 @@
                 <div class="form-group clearfix m-b-none">
                     <div class="input-group m-t m-b">
                         <span class="input-group-btn">
-                          <button type="submit" class="btn btn-sm bg-empty text-muted btn-icon"><i class="fa fa-search"></i></button>
+                          <button type="submit" class="btn btn-sm bg-empty text-muted btn-icon"><i
+                                  class="fa fa-search"></i></button>
                         </span>
-                        <input type="text" class="form-control input-sm text-white bg-empty b-b b-dark no-border" placeholder="Search members">
+                        <input type="text" class="form-control input-sm text-white bg-empty b-b b-dark no-border"
+                               placeholder="Search members">
                     </div>
                 </div>
             </form>
@@ -234,76 +270,84 @@
 </section>
 
 
-
 <?php
-echo  $this->head_ud->js(1,$version);
+echo $this->head_ud->js(1, $version);
 ?>
 
 
 <script>
-    function ResquestPage(page,version) {
+    function ResquestPage(page, version) {
 
 
+        if (page == null) {
 
-        if(page == null){
+            window.location.href = "404";
+        } else {
 
-            window.location.href="404";
-        }else{
+            $("#bjax-target").html('');
+            $("#loading").html('<i style="left: 45%;top: 45%;position: fixed;z-index: 10;" class="fa fa-spinner fa fa-4x fa-spin fa fa-large"></i>');
 
-            $("#loading").html('<h1 style="left: 40%;top: 50%;position: fixed;z-index: 10;">Carregando...</h1>');
-
-        $( "#bjax-target" ).fadeIn( "slow", function() {
-
+            $("#bjax-target").fadeIn("slow", function () {
 
 
-        $.ajax({
-            type: "POST",
-            url: page,
-            data: {page:page,version:version},
-            success: function (result) {
-                $("#bjax-target").html(result);
-                $("#loading").html('');
+                $.ajax({
+                    type: "POST",
+                    url: page,
+                    data: {page: page, version: version},
+                    success: function (result) {
+                        $("#bjax-target").html(result);
+                        $("#loading").html('');
+                        return false;
+
+                    },
+                    error: function (result) {
+                        alert('erro');
+
+                    }
+                });
+
+
+                $('#bjax-target').animate({
+                    scrollTop: 0
+                }, 800);
                 return false;
+            });
 
-            },
-            error: function (result) {
-                alert('erro');
-
-            }
-        });
-
-
-        $('#bjax-target').animate({
-            scrollTop: 0
-        }, 800);
-        return false;
-        });
-
-    }
+        }
 
 
     }
 
-    </script>
+</script>
 <script>
-    $('#plataform').click(function(){ResquestPage('<?php echo base_url('');?>plataformpg',<?php echo $version;?>);
-        return false;});
+    $('#plataform').click(function () {
+        ResquestPage('<?php echo base_url('');?>plataformpg',<?php echo $version;?>);
+        return false;
+    });
 
 
-  $('#feed').click(function(){ResquestPage('<?php echo base_url('');?>feedpg',<?php echo $version;?>);
+    $('#feed').click(function () {
+        ResquestPage('<?php echo base_url('');?>feedpg',<?php echo $version;?>);
         return false;
-  });
+    });
 
-    $('#descubra').click(function(){ResquestPage('<?php echo base_url('');?>descubrapg',<?php echo $version;?>);
+    $('#descubra').click(function () {
+        ResquestPage('<?php echo base_url('');?>descubrapg',<?php echo $version;?>);
         return false;
-  });
+    });
 
-    $('#categoria').click(function(){ResquestPage('<?php echo base_url('');?>categoriapg',<?php echo $version;?>);
+    $('#categoria').click(function () {
+        ResquestPage('<?php echo base_url('');?>categoriapg',<?php echo $version;?>);
         return false;
-  });
-    $('#populares').click(function(){ResquestPage('<?php echo base_url('');?>popularespg',<?php echo $version;?>);
+    });
+    $('#populares').click(function () {
+        ResquestPage('<?php echo base_url('');?>popularespg',<?php echo $version;?>);
         return false;
-  });
+    });
+  $('#profile').click(function () {
+        ResquestPage('<?php echo base_url('');?>profilepg',<?php echo $version;?>);
+        return false;
+    });
 
 
 </script>
@@ -311,7 +355,7 @@ echo  $this->head_ud->js(1,$version);
     function time() {
 
 
-      var time =  $("#jplayer_N").jPlayer()[0].childNodes[1].currentTime;
+        var time = $("#jplayer_N").jPlayer()[0].childNodes[1].currentTime;
 
 
         alert(time);
@@ -338,15 +382,15 @@ echo  $this->head_ud->js(1,$version);
         }
     });
     $(document).on('click', '#new_chat', function (e) {
-        var size = $( ".chat-window:last-child" ).css("margin-left");
+        var size = $(".chat-window:last-child").css("margin-left");
         size_total = parseInt(size) + 400;
         alert(size_total);
-        var clone = $( "#chat_window_1" ).clone().appendTo( ".container" );
+        var clone = $("#chat_window_1").clone().appendTo(".container");
         clone.css("margin-left", size_total);
     });
     $(document).on('click', '.icon_close', function (e) {
         //$(this).parent().parent().parent().parent().remove();
-        $( "#chat_window_1" ).remove();
+        $("#chat_window_1").remove();
     });
 
 </script>

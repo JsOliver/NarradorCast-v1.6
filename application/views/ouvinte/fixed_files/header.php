@@ -141,7 +141,7 @@ echo $this->head_ud->head(1,$version,$metas,$title); ?>
             <span class="input-group-btn">
               <button type="submit" class="btn btn-sm bg-white btn-icon rounded"><i class="fa fa-search"></i></button>
             </span>
-                    <input type="text" class="form-control input-sm no-border rounded" placeholder="Search songs, albums...">
+                    <input size="200" type="text" class="form-control input-sm no-border rounded" placeholder="Buscar  podcasts, pessoas...">
                 </div>
             </div>
         </form>
@@ -194,7 +194,7 @@ echo $this->head_ud->head(1,$version,$metas,$title); ?>
                             <a href="#">Settings</a>
                         </li>
                         <li>
-                            <a href="profile.html">Profile</a>
+                            <a id="profile" href="<?php echo base_url('profile');?>">Profile</a>
                         </li>
                         <li>
                             <a href="#">
@@ -260,6 +260,7 @@ echo $this->head_ud->head(1,$version,$metas,$title); ?>
 
                                     <li class="m-b hidden-nav-xs"></li>
                                 </ul>
+                                <!--
                                 <ul class="nav" data-ride="collapse">
                                     <li class="hidden-nav-xs padder m-t m-b-sm text-xs text-muted">
                                         Pessoas
@@ -268,28 +269,28 @@ echo $this->head_ud->head(1,$version,$metas,$title); ?>
                                     <li>
                                         <a href="listen.html">
                                             <i class="icon-users icon"></i>
-                                            <span>Buscar Pessoas</span>
+                                            <span>Meus Amigos</span>
                                         </a>
                                     </li>
-                                </ul>
+                                </ul> -->
                                 <ul class="nav text-sm" data-ride="collapse">
                                     <li class="hidden-nav-xs padder m-t m-b-sm text-xs text-muted">
                                         <span class="pull-right"><a href="#"><i class="icon-plus i-lg"></i></a></span>
                                         Playlist
                                     </li>
-                                    <li>
+                                  <!--  <li>
                                         <a href="playlists" id="playlistLoad">
                                             <i class="fa fa-search" aria-hidden="true"></i>
                                             <span>Buscar playlists</span>
                                         </a>
-                                    </li>
+                                    </li> -->
                                     <li class="">
                                         <a href="#" class="auto">
                         <span class="pull-right text-muted">
                           <i class="fa fa-angle-left text"></i>
                           <i class="fa fa-angle-down text-active"></i>
                         </span>
-                                            <i class="icon-playlist icon text-warning-lter">
+                                            <i class="icon-playlist icon text-lter">
                                             </i>
                                             <span>Minhas Playlists</span>
                                         </a>
@@ -297,14 +298,14 @@ echo $this->head_ud->head(1,$version,$metas,$title); ?>
                                             <?php for($i=0;$i<10;$i++):?>
                                             <li>
                                                 <a href="minhas-playlists/1" class="auto">
-                                                    <i class="icon-playlist icon text-warning-lter"></i>
+                                                    <i class="icon-playlist icon text-lter"></i>
                                                     <span>Minha playlist</span>
                                                 </a>
                                             </li>
                                            <?php endfor;?>
                                             <li>
                                                 <a href="minhas-playlists" class="auto">
-                                                    <i class="icon-eye icon text-info-lter"></i>
+                                                    <i class="icon-eye icon text-lter"></i>
                                                     <span>Ver Mais</span>
                                                 </a>
                                             </li>

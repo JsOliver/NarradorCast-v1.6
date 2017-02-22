@@ -94,8 +94,16 @@ Somos um podcast pernambucano, com um toque nerd, e falamos sobre filmes, s</spa
                 </section>
                 </section>
                 </section>
+<?php
+
+$explode = explode('/',$_POST['page']);
+$count = count($explode);
+
+?>
+
 <script>
 
-    window.history.pushState("", "", "<?php echo base_url('@'.$this->uri->segment(2))?>");
+    window.history.pushState("", "", "<?php echo base_url('@'.str_replace('@','',$explode[$count - 1]));?>");
 
 </script>
+
